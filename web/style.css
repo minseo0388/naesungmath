@@ -1,0 +1,183 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #ffffff;
+    --card-border: #e0e0e0;
+    --primary-color: #0056b3;
+    --secondary-color: #6c757d;
+    --accent-color: #0056b3;
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+/* Layout */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+/* Search */
+.search-container {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    padding-right: 3rem;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-family: var(--font-family);
+    transition: all 0.2s ease;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    pointer-events: none;
+}
+
+/* Grid */
+.function-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Cards */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    padding: 1.5rem;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.card:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+}
+
+.card h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.card .signature {
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.85rem;
+    color: #444;
+    background: #f8f9fa;
+    padding: 0.75rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 1rem;
+}
+
+.card .file-name {
+    font-size: 0.75rem;
+    color: #888;
+    text-align: right;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    margin-top: 5rem;
+    text-align: center;
+    color: #888;
+    font-size: 0.85rem;
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 2rem 1rem;
+    }
+
+    .function-grid {
+        grid-template-columns: 1fr;
+    }
+}

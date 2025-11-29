@@ -1,0 +1,587 @@
+﻿[
+    {
+        "name":  "ACORN",
+        "signature":  "seed = new Date().getTime(), moduloPower = 60, order = 10",
+        "file":  "ACORN.ts"
+    },
+    {
+        "name":  "arcLength",
+        "signature":  "r: number, l: number",
+        "file":  "arcLength.ts"
+    },
+    {
+        "name":  "arithmeticProgression",
+        "signature":  "a: number, d: number, n: number",
+        "file":  "arithmeticProgression.ts"
+    },
+    {
+        "name":  "arithmeticProgressiond",
+        "signature":  "a: number, n: number, s: number",
+        "file":  "arithmeticProgressiond.ts"
+    },
+    {
+        "name":  "arithmeticProgressionn",
+        "signature":  "d: number, n: number, s: number",
+        "file":  "arithmeticProgressionn.ts"
+    },
+    {
+        "name":  "arithmeticProgressionSum",
+        "signature":  "a1: number, n: number, d: number",
+        "file":  "arithmeticProgressionSum.ts"
+    },
+    {
+        "name":  "arithmeticProgressionSumterm",
+        "signature":  "a1: number, an: number, n: number",
+        "file":  "arithmeticProgressionSumterm.ts"
+    },
+    {
+        "name":  "caret",
+        "signature":  "a: number, b: number",
+        "file":  "caret.ts"
+    },
+    {
+        "name":  "centerGravity",
+        "signature":  "a1: number, a2: number, b1: number, b2: number, c1: number, c2: number",
+        "file":  "centerGravity.ts"
+    },
+    {
+        "name":  "circleArea",
+        "signature":  "r: number",
+        "file":  "circleArea.ts"
+    },
+    {
+        "name":  "circlePerimeter",
+        "signature":  "r: number",
+        "file":  "circlePerimeter.ts"
+    },
+    {
+        "name":  "circularSectorAngle",
+        "signature":  "r: number, l: number",
+        "file":  "circularSectorAngle.ts"
+    },
+    {
+        "name":  "circularSectorAreart",
+        "signature":  "r: number, t: number, l: number",
+        "file":  "circularSectorAreart.ts"
+    },
+    {
+        "name":  "circumference",
+        "signature":  "a: number",
+        "file":  "circumference.ts"
+    },
+    {
+        "name":  "circumscribedCircleTriangleAreaAngle",
+        "signature":  "a: number, b: number, c: number, r: number",
+        "file":  "circumscribedCircleTriangleAreaAngle.ts"
+    },
+    {
+        "name":  "circumscribedCircleTriangleAreaSide",
+        "signature":  "a: number, b: number, c: number, r: number",
+        "file":  "circumscribedCircleTriangleAreaSide.ts"
+    },
+    {
+        "name":  "coneArea",
+        "signature":  "r: number, h: number",
+        "file":  "coneArea.ts"
+    },
+    {
+        "name":  "coneVolume",
+        "signature":  "r: number, h: number",
+        "file":  "coneVolume.ts"
+    },
+    {
+        "name":  "cubeArea",
+        "signature":  "a: number",
+        "file":  "cubeArea.ts"
+    },
+    {
+        "name":  "cubeVolume",
+        "signature":  "a: number",
+        "file":  "cubeVolume.ts"
+    },
+    {
+        "name":  "cubicEquationFirst",
+        "signature":  "a: number, b: number, c: number, d: number",
+        "file":  "cubicEquationFirst.ts"
+    },
+    {
+        "name":  "cuboidArea",
+        "signature":  "a: number, b: number, c: number",
+        "file":  "cuboidArea.ts"
+    },
+    {
+        "name":  "cuboidDiagonal",
+        "signature":  "a: number, b: number, c: number",
+        "file":  "cuboidDiagonal.ts"
+    },
+    {
+        "name":  "cuboidVolume",
+        "signature":  "a: number, b: number, c: number",
+        "file":  "cuboidVolume.ts"
+    },
+    {
+        "name":  "cylinderArea",
+        "signature":  "r: number, h: number",
+        "file":  "cylinderArea.ts"
+    },
+    {
+        "name":  "cylinderVolume",
+        "signature":  "r: number, h: number",
+        "file":  "cylinderVolume.ts"
+    },
+    {
+        "name":  "degreeToRad",
+        "signature":  "deg: number",
+        "file":  "degreeToRad.ts"
+    },
+    {
+        "name":  "determinant",
+        "signature":  "matrix: number[][]",
+        "file":  "determinant.ts"
+    },
+    {
+        "name":  "diff",
+        "signature":  "f: (x: number) =\u003e number, density = 5",
+        "file":  "diff.ts"
+    },
+    {
+        "name":  "divide",
+        "signature":  "a: number, b: number",
+        "file":  "divide.ts"
+    },
+    {
+        "name":  "DurandKerner",
+        "signature":  "f: (x: number) =\u003e number, rootsNumber = 1, iterationCount = 15",
+        "file":  "DurandKerner.ts"
+    },
+    {
+        "name":  "equilateralTriangleArea",
+        "signature":  "a: number",
+        "file":  "equilateralTriangleArea.ts"
+    },
+    {
+        "name":  "equilateralTriangleHeight",
+        "signature":  "a: number",
+        "file":  "equilateralTriangleHeight.ts"
+    },
+    {
+        "name":  "eulerPolyhedronTheorem",
+        "signature":  "v: number, e: number, f: number",
+        "file":  "eulerPolyhedronTheorem.ts"
+    },
+    {
+        "name":  "evalEccentricity",
+        "signature":  "a: number, b: number",
+        "file":  "evalEccentricity.ts"
+    },
+    {
+        "name":  "factorial",
+        "signature":  "n: number",
+        "file":  "factorial.ts"
+    },
+    {
+        "name":  "gaussian",
+        "signature":  "matrix: number[][], m: number, n: number",
+        "file":  "gaussian.ts"
+    },
+    {
+        "name":  "GaussSeidel",
+        "signature":  "mat: number[][], iterationCount = 15",
+        "file":  "GaussSeidel.ts"
+    },
+    {
+        "name":  "gcd",
+        "signature":  "a: number, b: number",
+        "file":  "gcd.ts"
+    },
+    {
+        "name":  "geometricProgressiona",
+        "signature":  "an: number, n: number, r: number",
+        "file":  "geometricProgressiona.ts"
+    },
+    {
+        "name":  "geometricProgressionan",
+        "signature":  "a: number, n: number, r: number",
+        "file":  "geometricProgressionan.ts"
+    },
+    {
+        "name":  "geometricProgressionInfinitySum",
+        "signature":  "a: number, r: number",
+        "file":  "geometricProgressionInfinitySum.ts"
+    },
+    {
+        "name":  "geometricProgressionn",
+        "signature":  "an: number, a: number, r: number",
+        "file":  "geometricProgressionn.ts"
+    },
+    {
+        "name":  "geometricProgressionSum",
+        "signature":  "a: number, r: number, n: number",
+        "file":  "geometricProgressionSum.ts"
+    },
+    {
+        "name":  "geometricProgressr",
+        "signature":  "an: number, a: number, n: number",
+        "file":  "geometricProgressr.ts"
+    },
+    {
+        "name":  "heron",
+        "signature":  "a: number, b: number, c: number",
+        "file":  "heron.ts"
+    },
+    {
+        "name":  "hexagonArea",
+        "signature":  "a: number",
+        "file":  "hexagonArea.ts"
+    },
+    {
+        "name":  "IdentityMatrix",
+        "signature":  "n: number",
+        "file":  "IdentityMatrix.ts"
+    },
+    {
+        "name":  "infiniteSeries1",
+        "signature":  "x: number",
+        "file":  "infiniteSeries1.ts"
+    },
+    {
+        "name":  "infiniteSeries2",
+        "signature":  "x: number",
+        "file":  "infiniteSeries2.ts"
+    },
+    {
+        "name":  "infiniteSeries3",
+        "signature":  "x: number",
+        "file":  "infiniteSeries3.ts"
+    },
+    {
+        "name":  "infiniteSeries4",
+        "signature":  "x: number",
+        "file":  "infiniteSeries4.ts"
+    },
+    {
+        "name":  "inscribedCircleTriangleArea",
+        "signature":  "a: number, b: number, c: number, r: number",
+        "file":  "inscribedCircleTriangleArea.ts"
+    },
+    {
+        "name":  "integral",
+        "signature":  "f: (x: number) =\u003e number, density = 5",
+        "file":  "integral.ts"
+    },
+    {
+        "name":  "isinrange",
+        "signature":  "a: number, b: number",
+        "file":  "isinrange.ts"
+    },
+    {
+        "name":  "LUDecomposition",
+        "signature":  "matrix: number[][]",
+        "file":  "LUDecomposition.ts"
+    },
+    {
+        "name":  "matrixAdd",
+        "signature":  "matrixA: number[][], matrixB: number[][]",
+        "file":  "matrixAdd.ts"
+    },
+    {
+        "name":  "matrixMultiply",
+        "signature":  "matrixA: number[][], matrixB: number[][]",
+        "file":  "matrixMultiply.ts"
+    },
+    {
+        "name":  "matrixScalaMultiplation",
+        "signature":  "matrix: number[][], k: number",
+        "file":  "matrixScalaMultiplation.ts"
+    },
+    {
+        "name":  "MatrixSub",
+        "signature":  "matrixA: number[][], matrixB: number[][]",
+        "file":  "MatrixSub.ts"
+    },
+    {
+        "name":  "minus",
+        "signature":  "a: number, b: number",
+        "file":  "minus.ts"
+    },
+    {
+        "name":  "multiply",
+        "signature":  "a: number, b: number",
+        "file":  "multiply.ts"
+    },
+    {
+        "name":  "newtonsMethod",
+        "signature":  "f: (x: number) =\u003e number, count: number, initx = 2",
+        "file":  "newtonsMethod.ts"
+    },
+    {
+        "name":  "ovalArea",
+        "signature":  "a: number, b: number",
+        "file":  "ovalArea.ts"
+    },
+    {
+        "name":  "parallelogramArea",
+        "signature":  "a: number, h: number",
+        "file":  "parallelogramArea.ts"
+    },
+    {
+        "name":  "pentagonArea",
+        "signature":  "a: number",
+        "file":  "pentagonArea.ts"
+    },
+    {
+        "name":  "pentagonDiagonal",
+        "signature":  "a: number",
+        "file":  "pentagonDiagonal.ts"
+    },
+    {
+        "name":  "pentagonHeight",
+        "signature":  "a: number",
+        "file":  "pentagonHeight.ts"
+    },
+    {
+        "name":  "plus",
+        "signature":  "a: number, b: number",
+        "file":  "plus.ts"
+    },
+    {
+        "name":  "polyAngleDeg",
+        "signature":  "n: number",
+        "file":  "polyAngleDeg.ts"
+    },
+    {
+        "name":  "polyAngleRad",
+        "signature":  "n: number",
+        "file":  "polyAngleRad.ts"
+    },
+    {
+        "name":  "polyAngleSumDeg",
+        "signature":  "n: number",
+        "file":  "polyAngleSumDeg.ts"
+    },
+    {
+        "name":  "polyAngleSumRad",
+        "signature":  "n: number",
+        "file":  "polyAngleSumRad.ts"
+    },
+    {
+        "name":  "polyarea",
+        "signature":  "n: number, a: number",
+        "file":  "polyarea.ts"
+    },
+    {
+        "name":  "polydiag",
+        "signature":  "n: number",
+        "file":  "polydiag.ts"
+    },
+    {
+        "name":  "pow",
+        "signature":  "a: number, b: number",
+        "file":  "pow.ts"
+    },
+    {
+        "name":  "pytagoras",
+        "signature":  "a: number, b: number",
+        "file":  "pytagoras.ts"
+    },
+    {
+        "name":  "quadtria",
+        "signature":  "a: number, b: number",
+        "file":  "quadtria.ts"
+    },
+    {
+        "name":  "radian",
+        "signature":  "a: number",
+        "file":  "radian.ts"
+    },
+    {
+        "name":  "radToDegree",
+        "signature":  "rad: number",
+        "file":  "radToDegree.ts"
+    },
+    {
+        "name":  "random",
+        "signature":  "a: number, b: number",
+        "file":  "random.ts"
+    },
+    {
+        "name":  "randomVector",
+        "signature":  "len: number, norm = 1",
+        "file":  "randomVector.ts"
+    },
+    {
+        "name":  "rectangleArea",
+        "signature":  "a: number, b: number",
+        "file":  "rectangleArea.ts"
+    },
+    {
+        "name":  "rectangleDiagonal",
+        "signature":  "a: number, b: number",
+        "file":  "rectangleDiagonal.ts"
+    },
+    {
+        "name":  "rectanglePerimeter",
+        "signature":  "a: number, b: number",
+        "file":  "rectanglePerimeter.ts"
+    },
+    {
+        "name":  "rhombusArea",
+        "signature":  "a: number, b: number",
+        "file":  "rhombusArea.ts"
+    },
+    {
+        "name":  "rightTriangleArea",
+        "signature":  "a: number, b: number",
+        "file":  "rightTriangleArea.ts"
+    },
+    {
+        "name":  "rootAndCoefficient",
+        "signature":  "a: number, b: number, c: number, type: number",
+        "file":  "rootAndCoefficient.ts"
+    },
+    {
+        "name":  "rootFormulaEvenMinus",
+        "signature":  "a: number, b: number, c: number",
+        "file":  "rootFormulaEvenMinus.ts"
+    },
+    {
+        "name":  "rootFormulaEvenPlus",
+        "signature":  "a: number, b: number, c: number",
+        "file":  "rootFormulaEvenPlus.ts"
+    },
+    {
+        "name":  "rootFormulaminus",
+        "signature":  "a: number, b: number, c: number",
+        "file":  "rootFormulaminus.ts"
+    },
+    {
+        "name":  "rootFormulaplus",
+        "signature":  "a: number, b: number, c: number",
+        "file":  "rootFormulaplus.ts"
+    },
+    {
+        "name":  "round",
+        "signature":  "a: number",
+        "file":  "round.ts"
+    },
+    {
+        "name":  "sigma",
+        "signature":  "n: number, k: number",
+        "file":  "sigma.ts"
+    },
+    {
+        "name":  "sigmaCube",
+        "signature":  "n: number, k: number",
+        "file":  "sigmaCube.ts"
+    },
+    {
+        "name":  "sigmaSquare",
+        "signature":  "n: number, k: number",
+        "file":  "sigmaSquare.ts"
+    },
+    {
+        "name":  "sphereArea",
+        "signature":  "r: number",
+        "file":  "sphereArea.ts"
+    },
+    {
+        "name":  "sphereVolume",
+        "signature":  "r: number",
+        "file":  "sphereVolume.ts"
+    },
+    {
+        "name":  "sqrt",
+        "signature":  "a: number",
+        "file":  "sqrt.ts"
+    },
+    {
+        "name":  "sqrtDotProduct",
+        "signature":  "row1: number[], row2: number[]",
+        "file":  "sqrtDotProduct.ts"
+    },
+    {
+        "name":  "square",
+        "signature":  "a: number",
+        "file":  "square.ts"
+    },
+    {
+        "name":  "squareArea",
+        "signature":  "a: number, b: number, t: number",
+        "file":  "squareArea.ts"
+    },
+    {
+        "name":  "squarePyramidAreaab",
+        "signature":  "a: number, b: number",
+        "file":  "squarePyramidAreaab.ts"
+    },
+    {
+        "name":  "squarePyramidAreaah",
+        "signature":  "a: number, h: number",
+        "file":  "squarePyramidAreaah.ts"
+    },
+    {
+        "name":  "squarePyramidHeight",
+        "signature":  "a: number, b: number",
+        "file":  "squarePyramidHeight.ts"
+    },
+    {
+        "name":  "squarePyramidVolumeab",
+        "signature":  "a: number, b: number",
+        "file":  "squarePyramidVolumeab.ts"
+    },
+    {
+        "name":  "squarePyramidVolumeah",
+        "signature":  "a: number, h: number",
+        "file":  "squarePyramidVolumeah.ts"
+    },
+    {
+        "name":  "taylor",
+        "signature":  "f: (x: number) =\u003e number, a: number, count: number",
+        "file":  "taylor.ts"
+    },
+    {
+        "name":  "tetrahedronArea",
+        "signature":  "a: number",
+        "file":  "tetrahedronArea.ts"
+    },
+    {
+        "name":  "tetrahedronHeight",
+        "signature":  "a: number",
+        "file":  "tetrahedronHeight.ts"
+    },
+    {
+        "name":  "tetrahedronVolume",
+        "signature":  "a: number",
+        "file":  "tetrahedronVolume.ts"
+    },
+    {
+        "name":  "trace",
+        "signature":  "matrix: number[][]",
+        "file":  "trace.ts"
+    },
+    {
+        "name":  "transpose",
+        "signature":  "mat: number[][]",
+        "file":  "transpose.ts"
+    },
+    {
+        "name":  "trapezoidArea",
+        "signature":  "a: number, b: number, h: number",
+        "file":  "trapezoidArea.ts"
+    },
+    {
+        "name":  "triangleAreaAngle",
+        "signature":  "a: number, b: number, t: number",
+        "file":  "triangleAreaAngle.ts"
+    },
+    {
+        "name":  "triangleAreaSide",
+        "signature":  "a: number, h: number",
+        "file":  "triangleAreaSide.ts"
+    },
+    {
+        "name":  "triangularPyramidVolume",
+        "signature":  "a: number, h: number",
+        "file":  "triangularPyramidVolume.ts"
+    }
+]
