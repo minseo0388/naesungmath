@@ -195,6 +195,13 @@ footer {
 }
 
 /* Scrollbar */
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #dee2e6 transparent;
+}
+
+/* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -224,10 +231,14 @@ footer {
         height: 40vh;
         border-right: none;
         border-bottom: 1px solid var(--sidebar-border);
+        min-height: 0;
+        /* Firefox fix */
     }
 
     .main-content {
         height: 60vh;
+        min-height: 0;
+        /* Firefox fix */
     }
 
     .content-display {
