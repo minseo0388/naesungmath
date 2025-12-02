@@ -2,7 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const functionList = document.getElementById('functionList');
     const contentDisplay = document.getElementById('contentDisplay');
     const searchInput = document.getElementById('searchInput');
+    const langButtons = document.querySelectorAll('.lang-btn');
+
     let functions = [];
+    let currentLang = 'js'; // Default language
 
     // Fetch data
     fetch('data.json')
@@ -10,23 +13,53 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(data => {
             // Sort functions alphabetically
             functions = data.sort((a, b) => a.name.localeCompare(b.name));
-            renderSidebar(functions);
+            renderSidebar();
         })
         .catch(error => {
             console.error('Error loading data:', error);
             functionList.innerHTML = '<p style="padding: 1rem; color: red;">Error loading data.</p>';
         });
 
+    // Language Switcher Logic
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active button state
+            langButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Update current language
+            currentLang = btn.getAttribute('data-lang');
+
+            // Re-render sidebar and clear main content
+            renderSidebar();
+            contentDisplay.innerHTML = `
+                <div class="welcome-message">
+                    <h2>Welcome to Naesungmath Docs</h2>
+                    <p>Select a function from the sidebar to view its details.</p>
+                </div>
+            `;
+        });
+    });
+
     // Render Sidebar List
-    function renderSidebar(data) {
+    function renderSidebar(filterText = '') {
         functionList.innerHTML = '';
 
-        if (data.length === 0) {
+        // Filter functions:
+        // 1. Must exist in the current language
+        // 2. Must match search text
+        const filteredFunctions = functions.filter(func => {
+            const hasLang = !!func[currentLang];
+            const matchesSearch = func.name.toLowerCase().includes(filterText.toLowerCase());
+            return hasLang && matchesSearch;
+        });
+
+        if (filteredFunctions.length === 0) {
             functionList.innerHTML = '<p style="padding: 1rem; color: #999;">No functions found.</p>';
             return;
         }
 
-        data.forEach(func => {
+        filteredFunctions.forEach(func => {
             const item = document.createElement('div');
             item.className = 'function-item';
             item.textContent = func.name;
@@ -44,42 +77,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Display Function Details
     function displayFunction(func) {
-        // Default to JS if available, otherwise first available language
-        const languages = ['js', 'cs', 'py'].filter(lang => func[lang]);
-        const defaultLang = languages[0];
+        const langData = func[currentLang];
 
-        // Generate Tabs HTML
-        const tabsHtml = languages.map(lang => {
-            const label = lang === 'js' ? 'JavaScript' : (lang === 'cs' ? 'C#' : 'Python');
-            return `<button class="tab-button ${lang === defaultLang ? 'active' : ''}" data-lang="${lang}">${label}</button>`;
-        }).join('');
-
-        // Generate Content HTML for each language
-        const contentHtml = languages.map(lang => {
-            const data = func[lang];
-            return `
-                <div class="tab-content ${lang === defaultLang ? 'active' : ''}" id="content-${lang}">
-                    <div class="detail-section">
-                        <h3>Signature</h3>
-                        <div class="code-block">${data.signature}</div>
-                    </div>
-                    <div class="detail-section">
-                        <h3>Source File</h3>
-                        <div class="file-info">${data.file}</div>
-                    </div>
-                </div>
-            `;
-        }).join('');
+        if (!langData) {
+            contentDisplay.innerHTML = '<p>Data not available for this language.</p>';
+            return;
+        }
 
         contentDisplay.innerHTML = `
             <div class="function-detail">
-                <h2>${func.name}</h2>
+                <h2>${func.name} <span style="font-size: 0.5em; color: #999; vertical-align: middle;">(${currentLang.toUpperCase()})</span></h2>
                 
-                <div class="language-tabs">
-                    ${tabsHtml}
+                <div class="detail-section">
+                    <h3>Signature</h3>
+                    <div class="code-block">${langData.signature}</div>
                 </div>
 
-                ${contentHtml}
+                <div class="detail-section">
+                    <h3>Source File</h3>
+                    <div class="file-info">${langData.file}</div>
+                </div>
 
                 <div class="detail-section">
                     <h3>Usage Example</h3>
@@ -87,32 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             </div>
         `;
-
-        // Add Event Listeners for Tabs
-        const tabButtons = contentDisplay.querySelectorAll('.tab-button');
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const lang = button.getAttribute('data-lang');
-
-                // Update active tab button
-                tabButtons.forEach(btn => btn.classList.remove('active'));
-                button.classList.add('active');
-
-                // Update active content
-                contentDisplay.querySelectorAll('.tab-content').forEach(content => {
-                    content.classList.remove('active');
-                });
-                contentDisplay.getElementById(`content-${lang}`).classList.add('active');
-            });
-        });
     }
 
     // Search functionality
     searchInput.addEventListener('input', (e) => {
-        const searchTerm = e.target.value.toLowerCase();
-        const filteredFunctions = functions.filter(func =>
-            func.name.toLowerCase().includes(searchTerm)
-        );
-        renderSidebar(filteredFunctions);
+        renderSidebar(e.target.value);
     });
 });
