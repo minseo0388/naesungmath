@@ -54,6 +54,107 @@ body {
     margin-bottom: 1rem;
 }
 
+.search-container {
+    position: relative;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    padding-right: 2.5rem;
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-family: var(--font-family);
+    font-size: 0.9rem;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    right: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #adb5bd;
+    pointer-events: none;
+}
+
+/* Language Switcher (Sidebar) */
+.language-switcher {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 1rem;
+    background: #f1f3f5;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.lang-btn {
+    flex: 1;
+    border: none;
+    background: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #868e96;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.lang-btn:hover {
+    color: #495057;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.lang-btn.active {
+    background-color: #ffffff;
+    color: #333;
+    font-weight: 600;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.function-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0.5rem 0;
+}
+
+.function-item {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #495057;
+    transition: background-color 0.15s ease;
+    border-left: 3px solid transparent;
+}
+
+.function-item:hover {
+    background-color: var(--hover-bg);
+    color: #212529;
+}
+
+.function-item.active {
+    background-color: var(--active-bg);
+    color: var(--active-text);
+    border-left-color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
 .content-display {
     flex: 1;
     padding: 3rem;
@@ -108,7 +209,32 @@ body {
     white-space: pre-wrap;
 }
 
+/* Example Section */
+.example-block {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 1.5rem;
+    border-radius: 6px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 1rem;
+    overflow-x: auto;
+    margin-top: 0.5rem;
+}
+
 .file-info {
+    display: inline-block;
+    background-color: #e9ecef;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #495057;
+    font-family: monospace;
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    text-align: center;
     color: #adb5bd;
     font-size: 0.85rem;
     border-top: 1px solid #f1f3f5;
