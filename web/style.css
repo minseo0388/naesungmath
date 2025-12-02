@@ -66,27 +66,6 @@ body {
     border: 1px solid #ced4da;
     border-radius: 4px;
     font-family: var(--font-family);
-    font-size: 0.9rem;
-}
-
-#searchInput:focus {
-    outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.1);
-}
-
-.function-item {
-    padding: 0.75rem 1.5rem;
-    cursor: pointer;
-    font-size: 0.95rem;
-    color: #495057;
-    transition: background-color 0.15s ease;
-    border-left: 3px solid transparent;
-}
-
-.function-item:hover {
-    background-color: var(--hover-bg);
-    color: #212529;
 }
 
 .function-item.active {
