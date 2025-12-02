@@ -75,21 +75,6 @@ body {
     box-shadow: 0 0 0 2px rgba(0, 86, 179, 0.1);
 }
 
-.search-icon {
-    position: absolute;
-    right: 0.8rem;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #adb5bd;
-    pointer-events: none;
-}
-
-.function-list {
-    flex: 1;
-    overflow-y: auto;
-    padding: 0.5rem 0;
-}
-
 .function-item {
     padding: 0.75rem 1.5rem;
     cursor: pointer;
@@ -175,19 +160,6 @@ body {
 }
 
 .file-info {
-    display: inline-block;
-    background-color: #e9ecef;
-    padding: 0.4rem 0.8rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
-    color: #495057;
-    font-family: monospace;
-}
-
-/* Footer */
-footer {
-    padding: 2rem;
-    text-align: center;
     color: #adb5bd;
     font-size: 0.85rem;
     border-top: 1px solid #f1f3f5;
