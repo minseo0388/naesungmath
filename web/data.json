@@ -1,587 +1,1722 @@
 ﻿[
     {
-        "name":  "ACORN",
-        "signature":  "seed = new Date().getTime(), moduloPower = 60, order = 10",
-        "file":  "ACORN.ts"
-    },
-    {
-        "name":  "arcLength",
-        "signature":  "r: number, l: number",
-        "file":  "arcLength.ts"
-    },
-    {
-        "name":  "arithmeticProgression",
-        "signature":  "a: number, d: number, n: number",
-        "file":  "arithmeticProgression.ts"
-    },
-    {
-        "name":  "arithmeticProgressiond",
-        "signature":  "a: number, n: number, s: number",
-        "file":  "arithmeticProgressiond.ts"
-    },
-    {
-        "name":  "arithmeticProgressionn",
-        "signature":  "d: number, n: number, s: number",
-        "file":  "arithmeticProgressionn.ts"
-    },
-    {
-        "name":  "arithmeticProgressionSum",
-        "signature":  "a1: number, n: number, d: number",
-        "file":  "arithmeticProgressionSum.ts"
-    },
-    {
-        "name":  "arithmeticProgressionSumterm",
-        "signature":  "a1: number, an: number, n: number",
-        "file":  "arithmeticProgressionSumterm.ts"
-    },
-    {
-        "name":  "caret",
-        "signature":  "a: number, b: number",
-        "file":  "caret.ts"
-    },
-    {
-        "name":  "centerGravity",
-        "signature":  "a1: number, a2: number, b1: number, b2: number, c1: number, c2: number",
-        "file":  "centerGravity.ts"
-    },
-    {
-        "name":  "circleArea",
-        "signature":  "r: number",
-        "file":  "circleArea.ts"
-    },
-    {
-        "name":  "circlePerimeter",
-        "signature":  "r: number",
-        "file":  "circlePerimeter.ts"
-    },
-    {
-        "name":  "circularSectorAngle",
-        "signature":  "r: number, l: number",
-        "file":  "circularSectorAngle.ts"
-    },
-    {
-        "name":  "circularSectorAreart",
-        "signature":  "r: number, t: number, l: number",
-        "file":  "circularSectorAreart.ts"
-    },
-    {
-        "name":  "circumference",
-        "signature":  "a: number",
-        "file":  "circumference.ts"
-    },
-    {
-        "name":  "circumscribedCircleTriangleAreaAngle",
-        "signature":  "a: number, b: number, c: number, r: number",
-        "file":  "circumscribedCircleTriangleAreaAngle.ts"
-    },
-    {
-        "name":  "circumscribedCircleTriangleAreaSide",
-        "signature":  "a: number, b: number, c: number, r: number",
-        "file":  "circumscribedCircleTriangleAreaSide.ts"
-    },
-    {
-        "name":  "coneArea",
-        "signature":  "r: number, h: number",
-        "file":  "coneArea.ts"
-    },
-    {
-        "name":  "coneVolume",
-        "signature":  "r: number, h: number",
-        "file":  "coneVolume.ts"
-    },
-    {
-        "name":  "cubeArea",
-        "signature":  "a: number",
-        "file":  "cubeArea.ts"
-    },
-    {
-        "name":  "cubeVolume",
-        "signature":  "a: number",
-        "file":  "cubeVolume.ts"
-    },
-    {
-        "name":  "cubicEquationFirst",
-        "signature":  "a: number, b: number, c: number, d: number",
-        "file":  "cubicEquationFirst.ts"
-    },
-    {
-        "name":  "cuboidArea",
-        "signature":  "a: number, b: number, c: number",
-        "file":  "cuboidArea.ts"
-    },
-    {
-        "name":  "cuboidDiagonal",
-        "signature":  "a: number, b: number, c: number",
-        "file":  "cuboidDiagonal.ts"
-    },
-    {
-        "name":  "cuboidVolume",
-        "signature":  "a: number, b: number, c: number",
-        "file":  "cuboidVolume.ts"
-    },
-    {
-        "name":  "cylinderArea",
-        "signature":  "r: number, h: number",
-        "file":  "cylinderArea.ts"
-    },
-    {
-        "name":  "cylinderVolume",
-        "signature":  "r: number, h: number",
-        "file":  "cylinderVolume.ts"
-    },
-    {
-        "name":  "degreeToRad",
-        "signature":  "deg: number",
-        "file":  "degreeToRad.ts"
-    },
-    {
-        "name":  "determinant",
-        "signature":  "matrix: number[][]",
-        "file":  "determinant.ts"
-    },
-    {
-        "name":  "diff",
-        "signature":  "f: (x: number) =\u003e number, density = 5",
-        "file":  "diff.ts"
-    },
-    {
-        "name":  "divide",
-        "signature":  "a: number, b: number",
-        "file":  "divide.ts"
-    },
-    {
-        "name":  "DurandKerner",
-        "signature":  "f: (x: number) =\u003e number, rootsNumber = 1, iterationCount = 15",
-        "file":  "DurandKerner.ts"
-    },
-    {
-        "name":  "equilateralTriangleArea",
-        "signature":  "a: number",
-        "file":  "equilateralTriangleArea.ts"
-    },
-    {
-        "name":  "equilateralTriangleHeight",
-        "signature":  "a: number",
-        "file":  "equilateralTriangleHeight.ts"
-    },
-    {
-        "name":  "eulerPolyhedronTheorem",
-        "signature":  "v: number, e: number, f: number",
-        "file":  "eulerPolyhedronTheorem.ts"
-    },
-    {
-        "name":  "evalEccentricity",
-        "signature":  "a: number, b: number",
-        "file":  "evalEccentricity.ts"
-    },
-    {
-        "name":  "factorial",
-        "signature":  "n: number",
-        "file":  "factorial.ts"
-    },
-    {
-        "name":  "gaussian",
-        "signature":  "matrix: number[][], m: number, n: number",
-        "file":  "gaussian.ts"
-    },
-    {
-        "name":  "GaussSeidel",
-        "signature":  "mat: number[][], iterationCount = 15",
-        "file":  "GaussSeidel.ts"
-    },
-    {
-        "name":  "gcd",
-        "signature":  "a: number, b: number",
-        "file":  "gcd.ts"
-    },
-    {
-        "name":  "geometricProgressiona",
-        "signature":  "an: number, n: number, r: number",
-        "file":  "geometricProgressiona.ts"
-    },
-    {
-        "name":  "geometricProgressionan",
-        "signature":  "a: number, n: number, r: number",
-        "file":  "geometricProgressionan.ts"
-    },
-    {
-        "name":  "geometricProgressionInfinitySum",
-        "signature":  "a: number, r: number",
-        "file":  "geometricProgressionInfinitySum.ts"
-    },
-    {
-        "name":  "geometricProgressionn",
-        "signature":  "an: number, a: number, r: number",
-        "file":  "geometricProgressionn.ts"
-    },
-    {
-        "name":  "geometricProgressionSum",
-        "signature":  "a: number, r: number, n: number",
-        "file":  "geometricProgressionSum.ts"
-    },
-    {
-        "name":  "geometricProgressr",
-        "signature":  "an: number, a: number, n: number",
-        "file":  "geometricProgressr.ts"
-    },
-    {
-        "name":  "heron",
-        "signature":  "a: number, b: number, c: number",
-        "file":  "heron.ts"
-    },
-    {
-        "name":  "hexagonArea",
-        "signature":  "a: number",
-        "file":  "hexagonArea.ts"
-    },
-    {
-        "name":  "IdentityMatrix",
-        "signature":  "n: number",
-        "file":  "IdentityMatrix.ts"
-    },
-    {
-        "name":  "infiniteSeries1",
-        "signature":  "x: number",
-        "file":  "infiniteSeries1.ts"
-    },
-    {
-        "name":  "infiniteSeries2",
-        "signature":  "x: number",
-        "file":  "infiniteSeries2.ts"
-    },
-    {
-        "name":  "infiniteSeries3",
-        "signature":  "x: number",
-        "file":  "infiniteSeries3.ts"
-    },
-    {
-        "name":  "infiniteSeries4",
-        "signature":  "x: number",
-        "file":  "infiniteSeries4.ts"
-    },
-    {
-        "name":  "inscribedCircleTriangleArea",
-        "signature":  "a: number, b: number, c: number, r: number",
-        "file":  "inscribedCircleTriangleArea.ts"
-    },
-    {
-        "name":  "integral",
-        "signature":  "f: (x: number) =\u003e number, density = 5",
-        "file":  "integral.ts"
-    },
-    {
-        "name":  "isinrange",
-        "signature":  "a: number, b: number",
-        "file":  "isinrange.ts"
-    },
-    {
-        "name":  "LUDecomposition",
-        "signature":  "matrix: number[][]",
-        "file":  "LUDecomposition.ts"
-    },
-    {
-        "name":  "matrixAdd",
-        "signature":  "matrixA: number[][], matrixB: number[][]",
-        "file":  "matrixAdd.ts"
-    },
-    {
-        "name":  "matrixMultiply",
-        "signature":  "matrixA: number[][], matrixB: number[][]",
-        "file":  "matrixMultiply.ts"
-    },
-    {
-        "name":  "matrixScalaMultiplation",
-        "signature":  "matrix: number[][], k: number",
-        "file":  "matrixScalaMultiplation.ts"
-    },
-    {
-        "name":  "MatrixSub",
-        "signature":  "matrixA: number[][], matrixB: number[][]",
-        "file":  "MatrixSub.ts"
-    },
-    {
-        "name":  "minus",
-        "signature":  "a: number, b: number",
-        "file":  "minus.ts"
-    },
-    {
-        "name":  "multiply",
-        "signature":  "a: number, b: number",
-        "file":  "multiply.ts"
-    },
-    {
-        "name":  "newtonsMethod",
-        "signature":  "f: (x: number) =\u003e number, count: number, initx = 2",
-        "file":  "newtonsMethod.ts"
-    },
-    {
-        "name":  "ovalArea",
-        "signature":  "a: number, b: number",
-        "file":  "ovalArea.ts"
-    },
-    {
-        "name":  "parallelogramArea",
-        "signature":  "a: number, h: number",
-        "file":  "parallelogramArea.ts"
-    },
-    {
-        "name":  "pentagonArea",
-        "signature":  "a: number",
-        "file":  "pentagonArea.ts"
-    },
-    {
-        "name":  "pentagonDiagonal",
-        "signature":  "a: number",
-        "file":  "pentagonDiagonal.ts"
-    },
-    {
-        "name":  "pentagonHeight",
-        "signature":  "a: number",
-        "file":  "pentagonHeight.ts"
-    },
-    {
-        "name":  "plus",
-        "signature":  "a: number, b: number",
-        "file":  "plus.ts"
-    },
-    {
-        "name":  "polyAngleDeg",
-        "signature":  "n: number",
-        "file":  "polyAngleDeg.ts"
-    },
-    {
-        "name":  "polyAngleRad",
-        "signature":  "n: number",
-        "file":  "polyAngleRad.ts"
-    },
-    {
-        "name":  "polyAngleSumDeg",
-        "signature":  "n: number",
-        "file":  "polyAngleSumDeg.ts"
-    },
-    {
-        "name":  "polyAngleSumRad",
-        "signature":  "n: number",
-        "file":  "polyAngleSumRad.ts"
-    },
-    {
-        "name":  "polyarea",
-        "signature":  "n: number, a: number",
-        "file":  "polyarea.ts"
-    },
-    {
-        "name":  "polydiag",
-        "signature":  "n: number",
-        "file":  "polydiag.ts"
-    },
-    {
-        "name":  "pow",
-        "signature":  "a: number, b: number",
-        "file":  "pow.ts"
-    },
-    {
-        "name":  "pytagoras",
-        "signature":  "a: number, b: number",
-        "file":  "pytagoras.ts"
-    },
-    {
-        "name":  "quadtria",
-        "signature":  "a: number, b: number",
-        "file":  "quadtria.ts"
-    },
-    {
-        "name":  "radian",
-        "signature":  "a: number",
-        "file":  "radian.ts"
-    },
-    {
-        "name":  "radToDegree",
-        "signature":  "rad: number",
-        "file":  "radToDegree.ts"
-    },
-    {
-        "name":  "random",
-        "signature":  "a: number, b: number",
-        "file":  "random.ts"
-    },
-    {
-        "name":  "randomVector",
-        "signature":  "len: number, norm = 1",
-        "file":  "randomVector.ts"
-    },
-    {
-        "name":  "rectangleArea",
-        "signature":  "a: number, b: number",
-        "file":  "rectangleArea.ts"
-    },
-    {
-        "name":  "rectangleDiagonal",
-        "signature":  "a: number, b: number",
-        "file":  "rectangleDiagonal.ts"
-    },
-    {
-        "name":  "rectanglePerimeter",
-        "signature":  "a: number, b: number",
-        "file":  "rectanglePerimeter.ts"
-    },
-    {
-        "name":  "rhombusArea",
-        "signature":  "a: number, b: number",
-        "file":  "rhombusArea.ts"
-    },
-    {
-        "name":  "rightTriangleArea",
-        "signature":  "a: number, b: number",
-        "file":  "rightTriangleArea.ts"
-    },
-    {
-        "name":  "rootAndCoefficient",
-        "signature":  "a: number, b: number, c: number, type: number",
-        "file":  "rootAndCoefficient.ts"
-    },
-    {
-        "name":  "rootFormulaEvenMinus",
-        "signature":  "a: number, b: number, c: number",
-        "file":  "rootFormulaEvenMinus.ts"
-    },
-    {
-        "name":  "rootFormulaEvenPlus",
-        "signature":  "a: number, b: number, c: number",
-        "file":  "rootFormulaEvenPlus.ts"
-    },
-    {
-        "name":  "rootFormulaminus",
-        "signature":  "a: number, b: number, c: number",
-        "file":  "rootFormulaminus.ts"
-    },
-    {
-        "name":  "rootFormulaplus",
-        "signature":  "a: number, b: number, c: number",
-        "file":  "rootFormulaplus.ts"
-    },
-    {
-        "name":  "round",
-        "signature":  "a: number",
-        "file":  "round.ts"
-    },
-    {
-        "name":  "sigma",
-        "signature":  "n: number, k: number",
-        "file":  "sigma.ts"
-    },
-    {
-        "name":  "sigmaCube",
-        "signature":  "n: number, k: number",
-        "file":  "sigmaCube.ts"
-    },
-    {
-        "name":  "sigmaSquare",
-        "signature":  "n: number, k: number",
-        "file":  "sigmaSquare.ts"
-    },
-    {
-        "name":  "sphereArea",
-        "signature":  "r: number",
-        "file":  "sphereArea.ts"
-    },
-    {
-        "name":  "sphereVolume",
-        "signature":  "r: number",
-        "file":  "sphereVolume.ts"
-    },
-    {
-        "name":  "sqrt",
-        "signature":  "a: number",
-        "file":  "sqrt.ts"
-    },
-    {
-        "name":  "sqrtDotProduct",
-        "signature":  "row1: number[], row2: number[]",
-        "file":  "sqrtDotProduct.ts"
-    },
-    {
-        "name":  "square",
-        "signature":  "a: number",
-        "file":  "square.ts"
-    },
-    {
-        "name":  "squareArea",
-        "signature":  "a: number, b: number, t: number",
-        "file":  "squareArea.ts"
-    },
-    {
-        "name":  "squarePyramidAreaab",
-        "signature":  "a: number, b: number",
-        "file":  "squarePyramidAreaab.ts"
-    },
-    {
-        "name":  "squarePyramidAreaah",
-        "signature":  "a: number, h: number",
-        "file":  "squarePyramidAreaah.ts"
-    },
-    {
+        "cs":  {
+                   "file":  "squarePyramidHeight.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "squarePyramidHeight(5, 5)",
+        "py":  {
+                   "file":  "squarePyramidHeight.py",
+                   "signature":  "square_pyramid_height(a: float, b: float)"
+               },
         "name":  "squarePyramidHeight",
-        "signature":  "a: number, b: number",
-        "file":  "squarePyramidHeight.ts"
+        "js":  {
+                   "file":  "squarePyramidHeight.ts",
+                   "signature":  "a: number, b: number"
+               }
     },
     {
+        "cs":  {
+                   "file":  "rootFormulaplus.cs",
+                   "signature":  "Calculate(double a, double b, double c)"
+               },
+        "example":  "rootFormulaplus(5, 5, 5)",
+        "py":  {
+                   "file":  "rootFormulaplus.py",
+                   "signature":  "root_formula_plus(a: float, b: float, c: float)"
+               },
+        "name":  "rootFormulaplus",
+        "js":  {
+                   "file":  "rootFormulaplus.ts",
+                   "signature":  "a: number, b: number, c: number"
+               }
+    },
+    {
+        "example":  "matrixAdd([[1, 0], [0, 1]], [[1, 0], [0, 1]])",
+        "py":  {
+                   "file":  "matrixAdd.py",
+                   "signature":  "matrix_add(matrixA: list[list[float]], matrixB: list[list[float]])"
+               },
+        "name":  "matrixAdd",
+        "js":  {
+                   "file":  "matrixAdd.ts",
+                   "signature":  "matrixA: number[][], matrixB: number[][]"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "evalEccentricity.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "evalEccentricity(5, 5)",
+        "py":  {
+                   "file":  "evalEccentricity.py",
+                   "signature":  "eval_eccentricity(a: float, b: float)"
+               },
+        "name":  "evalEccentricity",
+        "js":  {
+                   "file":  "evalEccentricity.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "hexagonArea.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "hexagonArea(5)",
+        "py":  {
+                   "file":  "hexagonArea.py",
+                   "signature":  "hexagon_area(a: float)"
+               },
+        "name":  "hexagonArea",
+        "js":  {
+                   "file":  "hexagonArea.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "rootFormulaEvenPlus.cs",
+                   "signature":  "Calculate(double a, double b, double c)"
+               },
+        "example":  "rootFormulaEvenPlus(5, 5, 5)",
+        "py":  {
+                   "file":  "rootFormulaEvenPlus.py",
+                   "signature":  "root_formula_even_plus(a: float, b: float, c: float)"
+               },
+        "name":  "rootFormulaEvenPlus",
+        "js":  {
+                   "file":  "rootFormulaEvenPlus.ts",
+                   "signature":  "a: number, b: number, c: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "geometricProgressionInfinitySum.cs",
+                   "signature":  "Calculate(double a, double r)"
+               },
+        "example":  "geometricProgressionInfinitySum(5, 5)",
+        "py":  {
+                   "file":  "geometricProgressionInfinitySum.py",
+                   "signature":  "geometric_progression_infinity_sum(a: float, r: float)"
+               },
+        "name":  "geometricProgressionInfinitySum",
+        "js":  {
+                   "file":  "geometricProgressionInfinitySum.ts",
+                   "signature":  "a: number, r: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "infiniteSeries4.cs",
+                   "signature":  "Calculate(double x)"
+               },
+        "example":  "infiniteSeries4(5)",
+        "py":  {
+                   "file":  "infiniteSeries4.py",
+                   "signature":  "infinite_series_4(x: float)"
+               },
+        "name":  "infiniteSeries4",
+        "js":  {
+                   "file":  "infiniteSeries4.ts",
+                   "signature":  "x: number"
+               }
+    },
+    {
+        "example":  "newtonsMethod(5, 5, null)",
+        "py":  {
+                   "file":  "newtonsMethod.py",
+                   "signature":  "newtons_method(f, count, initx=2)"
+               },
+        "name":  "newtonsMethod",
+        "js":  {
+                   "file":  "newtonsMethod.ts",
+                   "signature":  "f: (x: number) =\u003e number, count: number, initx = 2"
+               }
+    },
+    {
+        "example":  "integral(5, null)",
+        "py":  {
+                   "file":  "integral.py",
+                   "signature":  "integral(f, density=5)"
+               },
+        "name":  "integral",
+        "js":  {
+                   "file":  "integral.ts",
+                   "signature":  "f: (x: number) =\u003e number, density = 5"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "pentagonArea.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "pentagonArea(5)",
+        "py":  {
+                   "file":  "pentagonArea.py",
+                   "signature":  "pentagon_area(a: float)"
+               },
+        "name":  "pentagonArea",
+        "js":  {
+                   "file":  "pentagonArea.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "cubeArea.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "cubeArea(5)",
+        "py":  {
+                   "file":  "cubeArea.py",
+                   "signature":  "cube_area(a: float)"
+               },
+        "name":  "cubeArea",
+        "js":  {
+                   "file":  "cubeArea.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "geometricProgressionan.cs",
+                   "signature":  "Calculate(double a, double n, double r)"
+               },
+        "example":  "geometricProgressionan(5, 5, 5)",
+        "py":  {
+                   "file":  "geometricProgressionan.py",
+                   "signature":  "geometric_progression_an(a: float, n: float, r: float)"
+               },
+        "name":  "geometricProgressionan",
+        "js":  {
+                   "file":  "geometricProgressionan.ts",
+                   "signature":  "a: number, n: number, r: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "radian.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "radian(5)",
+        "py":  {
+                   "file":  "radian.py",
+                   "signature":  "radian(a: float)"
+               },
+        "name":  "radian",
+        "js":  {
+                   "file":  "radian.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "cuboidDiagonal.cs",
+                   "signature":  "Calculate(double a, double b, double c)"
+               },
+        "example":  "cuboidDiagonal(5, 5, 5)",
+        "py":  {
+                   "file":  "cuboidDiagonal.py",
+                   "signature":  "cuboid_diagonal(a: float, b: float, c: float)"
+               },
+        "name":  "cuboidDiagonal",
+        "js":  {
+                   "file":  "cuboidDiagonal.ts",
+                   "signature":  "a: number, b: number, c: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "rectanglePerimeter.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "rectanglePerimeter(5, 5)",
+        "py":  {
+                   "file":  "rectanglePerimeter.py",
+                   "signature":  "rectangle_perimeter(a: float, b: float)"
+               },
+        "name":  "rectanglePerimeter",
+        "js":  {
+                   "file":  "rectanglePerimeter.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "ovalArea.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "ovalArea(5, 5)",
+        "py":  {
+                   "file":  "ovalArea.py",
+                   "signature":  "oval_area(a: float, b: float)"
+               },
+        "name":  "ovalArea",
+        "js":  {
+                   "file":  "ovalArea.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "polyAngleRad.cs",
+                   "signature":  "Calculate(double n)"
+               },
+        "example":  "polyAngleRad(5)",
+        "py":  {
+                   "file":  "polyAngleRad.py",
+                   "signature":  "poly_angle_rad(n: float)"
+               },
+        "name":  "polyAngleRad",
+        "js":  {
+                   "file":  "polyAngleRad.ts",
+                   "signature":  "n: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "geometricProgressr.cs",
+                   "signature":  "Calculate(double an, double a, double n)"
+               },
+        "example":  "geometricProgressr(5, 5, 5)",
+        "py":  {
+                   "file":  "geometricProgressr.py",
+                   "signature":  "geometric_progress_r(an: float, a: float, n: float)"
+               },
+        "name":  "geometricProgressr",
+        "js":  {
+                   "file":  "geometricProgressr.ts",
+                   "signature":  "an: number, a: number, n: number"
+               }
+    },
+    {
+        "example":  "IdentityMatrix(5)",
+        "py":  {
+                   "file":  "IdentityMatrix.py",
+                   "signature":  "identity_matrix(n: int)"
+               },
+        "name":  "IdentityMatrix",
+        "js":  {
+                   "file":  "IdentityMatrix.ts",
+                   "signature":  "n: number"
+               }
+    },
+    {
+        "example":  "arcLength(5, 5)",
+        "name":  "arcLength",
+        "js":  {
+                   "file":  "arcLength.ts",
+                   "signature":  "r: number, l: number"
+               }
+    },
+    {
+        "example":  "MatrixSub([[1, 0], [0, 1]], [[1, 0], [0, 1]])",
+        "py":  {
+                   "file":  "MatrixSub.py",
+                   "signature":  "matrix_sub(matrixA: list[list[float]], matrixB: list[list[float]])"
+               },
+        "name":  "MatrixSub",
+        "js":  {
+                   "file":  "MatrixSub.ts",
+                   "signature":  "matrixA: number[][], matrixB: number[][]"
+               }
+    },
+    {
+        "example":  "arithmeticProgressionSumterm(5, 5, 5)",
+        "py":  {
+                   "file":  "arithmeticProgressionSumterm.py",
+                   "signature":  "arithmetic_progression_sumterm(a1: float, an: float, n: float)"
+               },
+        "name":  "arithmeticProgressionSumterm",
+        "js":  {
+                   "file":  "arithmeticProgressionSumterm.ts",
+                   "signature":  "a1: number, an: number, n: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "factorial.cs",
+                   "signature":  "Calculate(int n)"
+               },
+        "example":  "factorial(5)",
+        "py":  {
+                   "file":  "factorial.py",
+                   "signature":  "factorial(n: int)"
+               },
+        "name":  "factorial",
+        "js":  {
+                   "file":  "factorial.ts",
+                   "signature":  "n: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "circumscribedCircleTriangleAreaSide.cs",
+                   "signature":  "Calculate(double a, double b, double c, double r)"
+               },
+        "example":  "circumscribedCircleTriangleAreaSide(5, 5, 5, 5)",
+        "py":  {
+                   "file":  "circumscribedCircleTriangleAreaSide.py",
+                   "signature":  "circumscribed_circle_triangle_area_side(a: float, b: float, c: float, r: float)"
+               },
+        "name":  "circumscribedCircleTriangleAreaSide",
+        "js":  {
+                   "file":  "circumscribedCircleTriangleAreaSide.ts",
+                   "signature":  "a: number, b: number, c: number, r: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "squarePyramidVolumeab.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "squarePyramidVolumeab(5, 5)",
+        "py":  {
+                   "file":  "squarePyramidVolumeab.py",
+                   "signature":  "square_pyramid_volume_ab(a: float, b: float)"
+               },
         "name":  "squarePyramidVolumeab",
-        "signature":  "a: number, b: number",
-        "file":  "squarePyramidVolumeab.ts"
+        "js":  {
+                   "file":  "squarePyramidVolumeab.ts",
+                   "signature":  "a: number, b: number"
+               }
     },
     {
-        "name":  "squarePyramidVolumeah",
-        "signature":  "a: number, h: number",
-        "file":  "squarePyramidVolumeah.ts"
+        "cs":  {
+                   "file":  "sphereArea.cs",
+                   "signature":  "Calculate(double r)"
+               },
+        "example":  "sphereArea(5)",
+        "py":  {
+                   "file":  "sphereArea.py",
+                   "signature":  "sphere_area(r: float)"
+               },
+        "name":  "sphereArea",
+        "js":  {
+                   "file":  "sphereArea.ts",
+                   "signature":  "r: number"
+               }
     },
     {
-        "name":  "taylor",
-        "signature":  "f: (x: number) =\u003e number, a: number, count: number",
-        "file":  "taylor.ts"
+        "cs":  {
+                   "file":  "cuboidArea.cs",
+                   "signature":  "Calculate(double a, double b, double c)"
+               },
+        "example":  "cuboidArea(5, 5, 5)",
+        "py":  {
+                   "file":  "cuboidArea.py",
+                   "signature":  "cuboid_area(a: float, b: float, c: float)"
+               },
+        "name":  "cuboidArea",
+        "js":  {
+                   "file":  "cuboidArea.ts",
+                   "signature":  "a: number, b: number, c: number"
+               }
     },
     {
-        "name":  "tetrahedronArea",
-        "signature":  "a: number",
-        "file":  "tetrahedronArea.ts"
-    },
-    {
-        "name":  "tetrahedronHeight",
-        "signature":  "a: number",
-        "file":  "tetrahedronHeight.ts"
-    },
-    {
-        "name":  "tetrahedronVolume",
-        "signature":  "a: number",
-        "file":  "tetrahedronVolume.ts"
-    },
-    {
+        "cs":  {
+                   "file":  "trace.cs",
+                   "signature":  "Calculate(double[,] matrix)"
+               },
+        "example":  "trace([[1, 0], [0, 1]])",
+        "py":  {
+                   "file":  "trace.py",
+                   "signature":  "trace(matrix: list[list[float]])"
+               },
         "name":  "trace",
-        "signature":  "matrix: number[][]",
-        "file":  "trace.ts"
+        "js":  {
+                   "file":  "trace.ts",
+                   "signature":  "matrix: number[][]"
+               }
     },
     {
-        "name":  "transpose",
-        "signature":  "mat: number[][]",
-        "file":  "transpose.ts"
+        "example":  "taylor(5, 5, 5)",
+        "py":  {
+                   "file":  "taylor.py",
+                   "signature":  "taylor(f, a, count)"
+               },
+        "name":  "taylor",
+        "js":  {
+                   "file":  "taylor.ts",
+                   "signature":  "f: (x: number) =\u003e number, a: number, count: number"
+               }
     },
     {
-        "name":  "trapezoidArea",
-        "signature":  "a: number, b: number, h: number",
-        "file":  "trapezoidArea.ts"
+        "cs":  {
+                   "file":  "caret.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "caret(5, 5)",
+        "py":  {
+                   "file":  "caret.py",
+                   "signature":  "caret(a: float, b: float)"
+               },
+        "name":  "caret",
+        "js":  {
+                   "file":  "caret.ts",
+                   "signature":  "a: number, b: number"
+               }
     },
     {
+        "cs":  {
+                   "file":  "rootFormulaminus.cs",
+                   "signature":  "Calculate(double a, double b, double c)"
+               },
+        "example":  "rootFormulaminus(5, 5, 5)",
+        "py":  {
+                   "file":  "rootFormulaminus.py",
+                   "signature":  "root_formula_minus(a: float, b: float, c: float)"
+               },
+        "name":  "rootFormulaminus",
+        "js":  {
+                   "file":  "rootFormulaminus.ts",
+                   "signature":  "a: number, b: number, c: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "determinant.cs",
+                   "signature":  "Calculate(double[,] matrix)"
+               },
+        "example":  "determinant([[1, 0], [0, 1]])",
+        "py":  {
+                   "file":  "determinant.py",
+                   "signature":  "determinant(matrix: list[list[float]])"
+               },
+        "name":  "determinant",
+        "js":  {
+                   "file":  "determinant.ts",
+                   "signature":  "matrix: number[][]"
+               }
+    },
+    {
+        "example":  "degreeToRad(5)",
+        "py":  {
+                   "file":  "degreeToRad.py",
+                   "signature":  "degree_to_rad(deg: float)"
+               },
+        "name":  "degreeToRad",
+        "js":  {
+                   "file":  "degreeToRad.ts",
+                   "signature":  "deg: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "polydiag.cs",
+                   "signature":  "Calculate(double n)"
+               },
+        "example":  "polydiag(5)",
+        "py":  {
+                   "file":  "polydiag.py",
+                   "signature":  "polydiag(n: float)"
+               },
+        "name":  "polydiag",
+        "js":  {
+                   "file":  "polydiag.ts",
+                   "signature":  "n: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "heron.cs",
+                   "signature":  "Calculate(double a, double b, double c)"
+               },
+        "example":  "heron(5, 5, 5)",
+        "py":  {
+                   "file":  "heron.py",
+                   "signature":  "heron(a: float, b: float, c: float)"
+               },
+        "name":  "heron",
+        "js":  {
+                   "file":  "heron.ts",
+                   "signature":  "a: number, b: number, c: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "rhombusArea.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "rhombusArea(5, 5)",
+        "py":  {
+                   "file":  "rhombusArea.py",
+                   "signature":  "rhombus_area(a: float, b: float)"
+               },
+        "name":  "rhombusArea",
+        "js":  {
+                   "file":  "rhombusArea.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "example":  "triangleAreaAngle(5, 5, 5)",
+        "py":  {
+                   "file":  "triangleAreaAngle.py",
+                   "signature":  "triangle_area_angle(a: float, b: float, t: float)"
+               },
         "name":  "triangleAreaAngle",
-        "signature":  "a: number, b: number, t: number",
-        "file":  "triangleAreaAngle.ts"
+        "js":  {
+                   "file":  "triangleAreaAngle.ts",
+                   "signature":  "a: number, b: number, t: number"
+               }
     },
     {
+        "cs":  {
+                   "file":  "pow.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "pow(5, 5)",
+        "py":  {
+                   "file":  "pow.py",
+                   "signature":  "pow_(a: float, b: float)"
+               },
+        "name":  "pow",
+        "js":  {
+                   "file":  "pow.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "squarePyramidVolumeah.cs",
+                   "signature":  "Calculate(double a, double h)"
+               },
+        "example":  "squarePyramidVolumeah(5, 5)",
+        "py":  {
+                   "file":  "squarePyramidVolumeah.py",
+                   "signature":  "square_pyramid_volume_ah(a: float, h: float)"
+               },
+        "name":  "squarePyramidVolumeah",
+        "js":  {
+                   "file":  "squarePyramidVolumeah.ts",
+                   "signature":  "a: number, h: number"
+               }
+    },
+    {
+        "example":  "matrixScalaMultiplation([[1, 0], [0, 1]], 5)",
+        "py":  {
+                   "file":  "matrixScalaMultiplation.py",
+                   "signature":  "matrix_scala_multiplation(matrix: list[list[float]], k: float)"
+               },
+        "name":  "matrixScalaMultiplation",
+        "js":  {
+                   "file":  "matrixScalaMultiplation.ts",
+                   "signature":  "matrix: number[][], k: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "centerGravity.cs",
+                   "signature":  "Calculate(double a1, double a2, double b1, double b2, double c1, double c2)"
+               },
+        "example":  "centerGravity(5, 5, 5, 5, 5, 5)",
+        "py":  {
+                   "file":  "centerGravity.py",
+                   "signature":  "center_gravity(a1: float, a2: float, b1: float, b2: float, c1: float, c2: float)"
+               },
+        "name":  "centerGravity",
+        "js":  {
+                   "file":  "centerGravity.ts",
+                   "signature":  "a1: number, a2: number, b1: number, b2: number, c1: number, c2: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "gcd.cs",
+                   "signature":  "Calculate(int a, int b)"
+               },
+        "example":  "gcd(5, 5)",
+        "py":  {
+                   "file":  "gcd.py",
+                   "signature":  "gcd(a: int, b: int)"
+               },
+        "name":  "gcd",
+        "js":  {
+                   "file":  "gcd.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "circumference.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "circumference(5)",
+        "py":  {
+                   "file":  "circumference.py",
+                   "signature":  "circumference(a: float)"
+               },
+        "name":  "circumference",
+        "js":  {
+                   "file":  "circumference.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "equilateralTriangleArea.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "equilateralTriangleArea(5)",
+        "py":  {
+                   "file":  "equilateralTriangleArea.py",
+                   "signature":  "equilateral_triangle_area(a: float)"
+               },
+        "name":  "equilateralTriangleArea",
+        "js":  {
+                   "file":  "equilateralTriangleArea.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "example":  "DurandKerner(5, 5, null)",
+        "name":  "DurandKerner",
+        "js":  {
+                   "file":  "DurandKerner.ts",
+                   "signature":  "f: (x: number) =\u003e number, rootsNumber = 1, iterationCount = 15"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "arithmeticProgression.cs",
+                   "signature":  "Calculate(double a, double d, double n)"
+               },
+        "example":  "arithmeticProgression(5, 5, 5)",
+        "py":  {
+                   "file":  "arithmeticProgression.py",
+                   "signature":  "arithmetic_progression(a: float, d: float, n: float)"
+               },
+        "name":  "arithmeticProgression",
+        "js":  {
+                   "file":  "arithmeticProgression.ts",
+                   "signature":  "a: number, d: number, n: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "rectangleDiagonal.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "rectangleDiagonal(5, 5)",
+        "py":  {
+                   "file":  "rectangleDiagonal.py",
+                   "signature":  "rectangle_diagonal(a: float, b: float)"
+               },
+        "name":  "rectangleDiagonal",
+        "js":  {
+                   "file":  "rectangleDiagonal.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "example":  "gaussian([[1, 0], [0, 1]], 5, 5)",
+        "py":  {
+                   "file":  "gaussian.py",
+                   "signature":  "gaussian(matrix: list[list[float]], m: int, n: int)"
+               },
+        "name":  "gaussian",
+        "js":  {
+                   "file":  "gaussian.ts",
+                   "signature":  "matrix: number[][], m: number, n: number"
+               }
+    },
+    {
+        "example":  "triangleAreaSide(5, 5)",
+        "py":  {
+                   "file":  "triangleAreaSide.py",
+                   "signature":  "triangle_area_side(a: float, h: float)"
+               },
         "name":  "triangleAreaSide",
-        "signature":  "a: number, h: number",
-        "file":  "triangleAreaSide.ts"
+        "js":  {
+                   "file":  "triangleAreaSide.ts",
+                   "signature":  "a: number, h: number"
+               }
     },
     {
+        "cs":  {
+                   "file":  "sqrtDotProduct.cs",
+                   "signature":  "Calculate(double[] row1, double[] row2)"
+               },
+        "example":  "sqrtDotProduct([1, 2, 3], [1, 2, 3])",
+        "py":  {
+                   "file":  "sqrtDotProduct.py",
+                   "signature":  "sqrt_dot_product(row1: list[float], row2: list[float])"
+               },
+        "name":  "sqrtDotProduct",
+        "js":  {
+                   "file":  "sqrtDotProduct.ts",
+                   "signature":  "row1: number[], row2: number[]"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "tetrahedronHeight.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "tetrahedronHeight(5)",
+        "py":  {
+                   "file":  "tetrahedronHeight.py",
+                   "signature":  "tetrahedron_height(a: float)"
+               },
+        "name":  "tetrahedronHeight",
+        "js":  {
+                   "file":  "tetrahedronHeight.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "example":  "randomVector(5, null)",
+        "py":  {
+                   "file":  "randomVector.py",
+                   "signature":  "random_vector(length: int, norm: float = 1)"
+               },
+        "name":  "randomVector",
+        "js":  {
+                   "file":  "randomVector.ts",
+                   "signature":  "len: number, norm = 1"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "circumscribedCircleTriangleAreaAngle.cs",
+                   "signature":  "Calculate(double a, double b, double c, double r)"
+               },
+        "example":  "circumscribedCircleTriangleAreaAngle(5, 5, 5, 5)",
+        "py":  {
+                   "file":  "circumscribedCircleTriangleAreaAngle.py",
+                   "signature":  "circumscribed_circle_triangle_area_angle(a: float, b: float, c: float, r: float)"
+               },
+        "name":  "circumscribedCircleTriangleAreaAngle",
+        "js":  {
+                   "file":  "circumscribedCircleTriangleAreaAngle.ts",
+                   "signature":  "a: number, b: number, c: number, r: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "sigmaCube.cs",
+                   "signature":  "Calculate(double n, double k)"
+               },
+        "example":  "sigmaCube(5, 5)",
+        "py":  {
+                   "file":  "sigmaCube.py",
+                   "signature":  "sigma_cube(n: float, k: float)"
+               },
+        "name":  "sigmaCube",
+        "js":  {
+                   "file":  "sigmaCube.ts",
+                   "signature":  "n: number, k: number"
+               }
+    },
+    {
+        "example":  "LUDecomposition([[1, 0], [0, 1]])",
+        "py":  {
+                   "file":  "LUDecomposition.py",
+                   "signature":  "lu_decomposition(matrix: list[list[float]])"
+               },
+        "name":  "LUDecomposition",
+        "js":  {
+                   "file":  "LUDecomposition.ts",
+                   "signature":  "matrix: number[][]"
+               }
+    },
+    {
+        "example":  "arithmeticProgressiond(5, 5, 5)",
+        "py":  {
+                   "file":  "arithmeticProgressiond.py",
+                   "signature":  "arithmetic_progression_d(a: float, n: float, s: float)"
+               },
+        "name":  "arithmeticProgressiond",
+        "js":  {
+                   "file":  "arithmeticProgressiond.ts",
+                   "signature":  "a: number, n: number, s: number"
+               }
+    },
+    {
+        "example":  "transpose([[1, 0], [0, 1]])",
+        "py":  {
+                   "file":  "transpose.py",
+                   "signature":  "transpose(mat: list[list[float]])"
+               },
+        "name":  "transpose",
+        "js":  {
+                   "file":  "transpose.ts",
+                   "signature":  "mat: number[][]"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "square.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "square(5)",
+        "py":  {
+                   "file":  "square.py",
+                   "signature":  "square(a: float)"
+               },
+        "name":  "square",
+        "js":  {
+                   "file":  "square.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "example":  "trapezoidArea(5, 5, 5)",
+        "py":  {
+                   "file":  "trapezoidArea.py",
+                   "signature":  "trapezoid_area(a: float, b: float, h: float)"
+               },
+        "name":  "trapezoidArea",
+        "js":  {
+                   "file":  "trapezoidArea.ts",
+                   "signature":  "a: number, b: number, h: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "circleArea.cs",
+                   "signature":  "Calculate(double r)"
+               },
+        "example":  "circleArea(5)",
+        "py":  {
+                   "file":  "circleArea.py",
+                   "signature":  "circle_area(r: float)"
+               },
+        "name":  "circleArea",
+        "js":  {
+                   "file":  "circleArea.ts",
+                   "signature":  "r: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "coneArea.cs",
+                   "signature":  "Calculate(double r, double h)"
+               },
+        "example":  "coneArea(5, 5)",
+        "py":  {
+                   "file":  "coneArea.py",
+                   "signature":  "cone_area(r: float, h: float)"
+               },
+        "name":  "coneArea",
+        "js":  {
+                   "file":  "coneArea.ts",
+                   "signature":  "r: number, h: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "divide.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "divide(5, 5)",
+        "py":  {
+                   "file":  "divide.py",
+                   "signature":  "divide(a: float, b: float)"
+               },
+        "name":  "divide",
+        "js":  {
+                   "file":  "divide.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "example":  "ACORN(null, null, null)",
+        "name":  "ACORN",
+        "js":  {
+                   "file":  "ACORN.ts",
+                   "signature":  "seed = new Date().getTime(), moduloPower = 60, order = 10"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "quadtria.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "quadtria(5, 5)",
+        "py":  {
+                   "file":  "quadtria.py",
+                   "signature":  "quadtria(a: float, b: float)"
+               },
+        "name":  "quadtria",
+        "js":  {
+                   "file":  "quadtria.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "circularSectorAreart.cs",
+                   "signature":  "Calculate(double r, double? t = null, double? l = null)"
+               },
+        "example":  "circularSectorAreart(5, 5, 5)",
+        "py":  {
+                   "file":  "circularSectorAreart.py",
+                   "signature":  "circular_sector_areart(r: float, t: float = None, l: float = None)"
+               },
+        "name":  "circularSectorAreart",
+        "js":  {
+                   "file":  "circularSectorAreart.ts",
+                   "signature":  "r: number, t: number, l: number"
+               }
+    },
+    {
+        "example":  "eulerPolyhedronTheorem(5, 5, 5)",
+        "py":  {
+                   "file":  "eulerPolyhedronTheorem.py",
+                   "signature":  "euler_polyhedron_theorem(v: float, e: float, f: float)"
+               },
+        "name":  "eulerPolyhedronTheorem",
+        "js":  {
+                   "file":  "eulerPolyhedronTheorem.ts",
+                   "signature":  "v: number, e: number, f: number"
+               }
+    },
+    {
+        "example":  "random(5, 5)",
+        "py":  {
+                   "file":  "random.py",
+                   "signature":  "random_(a: int, b: int)"
+               },
+        "name":  "random",
+        "js":  {
+                   "file":  "random.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "geometricProgressionSum.cs",
+                   "signature":  "Calculate(double a, double r, double n)"
+               },
+        "example":  "geometricProgressionSum(5, 5, 5)",
+        "py":  {
+                   "file":  "geometricProgressionSum.py",
+                   "signature":  "geometric_progression_sum(a: float, r: float, n: float)"
+               },
+        "name":  "geometricProgressionSum",
+        "js":  {
+                   "file":  "geometricProgressionSum.ts",
+                   "signature":  "a: number, r: number, n: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "squarePyramidAreaah.cs",
+                   "signature":  "Calculate(double a, double h)"
+               },
+        "example":  "squarePyramidAreaah(5, 5)",
+        "py":  {
+                   "file":  "squarePyramidAreaah.py",
+                   "signature":  "square_pyramid_area_ah(a: float, h: float)"
+               },
+        "name":  "squarePyramidAreaah",
+        "js":  {
+                   "file":  "squarePyramidAreaah.ts",
+                   "signature":  "a: number, h: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "minus.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "minus(5, 5)",
+        "py":  {
+                   "file":  "minus.py",
+                   "signature":  "minus(a: float, b: float)"
+               },
+        "name":  "minus",
+        "js":  {
+                   "file":  "minus.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "pentagonDiagonal.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "pentagonDiagonal(5)",
+        "py":  {
+                   "file":  "pentagonDiagonal.py",
+                   "signature":  "pentagon_diagonal(a: float)"
+               },
+        "name":  "pentagonDiagonal",
+        "js":  {
+                   "file":  "pentagonDiagonal.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "sigmaSquare.cs",
+                   "signature":  "Calculate(double n, double k)"
+               },
+        "example":  "sigmaSquare(5, 5)",
+        "py":  {
+                   "file":  "sigmaSquare.py",
+                   "signature":  "sigma_square(n: float, k: float)"
+               },
+        "name":  "sigmaSquare",
+        "js":  {
+                   "file":  "sigmaSquare.ts",
+                   "signature":  "n: number, k: number"
+               }
+    },
+    {
+        "example":  "matrixMultiply([[1, 0], [0, 1]], [[1, 0], [0, 1]])",
+        "py":  {
+                   "file":  "matrixMultiply.py",
+                   "signature":  "matrix_multiply(matrixA: list[list[float]], matrixB: list[list[float]])"
+               },
+        "name":  "matrixMultiply",
+        "js":  {
+                   "file":  "matrixMultiply.ts",
+                   "signature":  "matrixA: number[][], matrixB: number[][]"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "squareArea.cs",
+                   "signature":  "Calculate(double a, double b, double t)"
+               },
+        "example":  "squareArea(5, 5, 5)",
+        "py":  {
+                   "file":  "squareArea.py",
+                   "signature":  "square_area(a: float, b: float, t: float)"
+               },
+        "name":  "squareArea",
+        "js":  {
+                   "file":  "squareArea.ts",
+                   "signature":  "a: number, b: number, t: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "inscribedCircleTriangleArea.cs",
+                   "signature":  "Calculate(double a, double b, double c, double r)"
+               },
+        "example":  "inscribedCircleTriangleArea(5, 5, 5, 5)",
+        "py":  {
+                   "file":  "inscribedCircleTriangleArea.py",
+                   "signature":  "inscribed_circle_triangle_area(a: float, b: float, c: float, r: float)"
+               },
+        "name":  "inscribedCircleTriangleArea",
+        "js":  {
+                   "file":  "inscribedCircleTriangleArea.ts",
+                   "signature":  "a: number, b: number, c: number, r: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "geometricProgressionn.cs",
+                   "signature":  "Calculate(double an, double a, double r)"
+               },
+        "example":  "geometricProgressionn(5, 5, 5)",
+        "py":  {
+                   "file":  "geometricProgressionn.py",
+                   "signature":  "geometric_progression_n(an: float, a: float, r: float)"
+               },
+        "name":  "geometricProgressionn",
+        "js":  {
+                   "file":  "geometricProgressionn.ts",
+                   "signature":  "an: number, a: number, r: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "plus.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "plus(5, 5)",
+        "py":  {
+                   "file":  "plus.py",
+                   "signature":  "plus(a: float, b: float)"
+               },
+        "name":  "plus",
+        "js":  {
+                   "file":  "plus.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "multiply.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "multiply(5, 5)",
+        "py":  {
+                   "file":  "multiply.py",
+                   "signature":  "multiply(a: float, b: float)"
+               },
+        "name":  "multiply",
+        "js":  {
+                   "file":  "multiply.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "coneVolume.cs",
+                   "signature":  "Calculate(double r, double h)"
+               },
+        "example":  "coneVolume(5, 5)",
+        "py":  {
+                   "file":  "coneVolume.py",
+                   "signature":  "cone_volume(r: float, h: float)"
+               },
+        "name":  "coneVolume",
+        "js":  {
+                   "file":  "coneVolume.ts",
+                   "signature":  "r: number, h: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "infiniteSeries1.cs",
+                   "signature":  "Calculate(double x)"
+               },
+        "example":  "infiniteSeries1(5)",
+        "py":  {
+                   "file":  "infiniteSeries1.py",
+                   "signature":  "infinite_series_1(x: float)"
+               },
+        "name":  "infiniteSeries1",
+        "js":  {
+                   "file":  "infiniteSeries1.ts",
+                   "signature":  "x: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "cubeVolume.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "cubeVolume(5)",
+        "py":  {
+                   "file":  "cubeVolume.py",
+                   "signature":  "cube_volume(a: float)"
+               },
+        "name":  "cubeVolume",
+        "js":  {
+                   "file":  "cubeVolume.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "infiniteSeries2.cs",
+                   "signature":  "Calculate(double x)"
+               },
+        "example":  "infiniteSeries2(5)",
+        "py":  {
+                   "file":  "infiniteSeries2.py",
+                   "signature":  "infinite_series_2(x: float)"
+               },
+        "name":  "infiniteSeries2",
+        "js":  {
+                   "file":  "infiniteSeries2.ts",
+                   "signature":  "x: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "equilateralTriangleHeight.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "equilateralTriangleHeight(5)",
+        "py":  {
+                   "file":  "equilateralTriangleHeight.py",
+                   "signature":  "equilateral_triangle_height(a: float)"
+               },
+        "name":  "equilateralTriangleHeight",
+        "js":  {
+                   "file":  "equilateralTriangleHeight.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "polyAngleDeg.cs",
+                   "signature":  "Calculate(double n)"
+               },
+        "example":  "polyAngleDeg(5)",
+        "py":  {
+                   "file":  "polyAngleDeg.py",
+                   "signature":  "poly_angle_deg(n: float)"
+               },
+        "name":  "polyAngleDeg",
+        "js":  {
+                   "file":  "polyAngleDeg.ts",
+                   "signature":  "n: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "squarePyramidAreaab.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "squarePyramidAreaab(5, 5)",
+        "py":  {
+                   "file":  "squarePyramidAreaab.py",
+                   "signature":  "square_pyramid_area_ab(a: float, b: float)"
+               },
+        "name":  "squarePyramidAreaab",
+        "js":  {
+                   "file":  "squarePyramidAreaab.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "example":  "arithmeticProgressionn(5, 5, 5)",
+        "py":  {
+                   "file":  "arithmeticProgressionn.py",
+                   "signature":  "arithmetic_progression_n(d: float, n: float, s: float)"
+               },
+        "name":  "arithmeticProgressionn",
+        "js":  {
+                   "file":  "arithmeticProgressionn.ts",
+                   "signature":  "d: number, n: number, s: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "rootAndCoefficient.cs",
+                   "signature":  "Calculate(double a, double b, double c, int type)"
+               },
+        "example":  "rootAndCoefficient(5, 5, 5, 5)",
+        "py":  {
+                   "file":  "rootAndCoefficient.py",
+                   "signature":  "root_and_coefficient(a: float, b: float, c: float, type_: int)"
+               },
+        "name":  "rootAndCoefficient",
+        "js":  {
+                   "file":  "rootAndCoefficient.ts",
+                   "signature":  "a: number, b: number, c: number, type: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "polyarea.cs",
+                   "signature":  "Calculate(double n, double a)"
+               },
+        "example":  "polyarea(5, 5)",
+        "py":  {
+                   "file":  "polyarea.py",
+                   "signature":  "polyarea(n: float, a: float)"
+               },
+        "name":  "polyarea",
+        "js":  {
+                   "file":  "polyarea.ts",
+                   "signature":  "n: number, a: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "pentagonHeight.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "pentagonHeight(5)",
+        "py":  {
+                   "file":  "pentagonHeight.py",
+                   "signature":  "pentagon_height(a: float)"
+               },
+        "name":  "pentagonHeight",
+        "js":  {
+                   "file":  "pentagonHeight.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "polyAngleSumRad.cs",
+                   "signature":  "Calculate(double n)"
+               },
+        "example":  "polyAngleSumRad(5)",
+        "py":  {
+                   "file":  "polyAngleSumRad.py",
+                   "signature":  "poly_angle_sum_rad(n: float)"
+               },
+        "name":  "polyAngleSumRad",
+        "js":  {
+                   "file":  "polyAngleSumRad.ts",
+                   "signature":  "n: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "rectangleArea.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "rectangleArea(5, 5)",
+        "py":  {
+                   "file":  "rectangleArea.py",
+                   "signature":  "rectangle_area(a: float, b: float)"
+               },
+        "name":  "rectangleArea",
+        "js":  {
+                   "file":  "rectangleArea.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "rootFormulaEvenMinus.cs",
+                   "signature":  "Calculate(double a, double b, double c)"
+               },
+        "example":  "rootFormulaEvenMinus(5, 5, 5)",
+        "py":  {
+                   "file":  "rootFormulaEvenMinus.py",
+                   "signature":  "root_formula_even_minus(a: float, b: float, c: float)"
+               },
+        "name":  "rootFormulaEvenMinus",
+        "js":  {
+                   "file":  "rootFormulaEvenMinus.ts",
+                   "signature":  "a: number, b: number, c: number"
+               }
+    },
+    {
+        "example":  "cylinderVolume(5, 5)",
+        "name":  "cylinderVolume",
+        "js":  {
+                   "file":  "cylinderVolume.ts",
+                   "signature":  "r: number, h: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "circularSectorAngle.cs",
+                   "signature":  "Calculate(double r, double l)"
+               },
+        "example":  "circularSectorAngle(5, 5)",
+        "py":  {
+                   "file":  "circularSectorAngle.py",
+                   "signature":  "circular_sector_angle(r: float, l: float)"
+               },
+        "name":  "circularSectorAngle",
+        "js":  {
+                   "file":  "circularSectorAngle.ts",
+                   "signature":  "r: number, l: number"
+               }
+    },
+    {
+        "example":  "GaussSeidel([[1, 0], [0, 1]], null)",
+        "name":  "GaussSeidel",
+        "js":  {
+                   "file":  "GaussSeidel.ts",
+                   "signature":  "mat: number[][], iterationCount = 15"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "polyAngleSumDeg.cs",
+                   "signature":  "Calculate(double n)"
+               },
+        "example":  "polyAngleSumDeg(5)",
+        "py":  {
+                   "file":  "polyAngleSumDeg.py",
+                   "signature":  "poly_angle_sum_deg(n: float)"
+               },
+        "name":  "polyAngleSumDeg",
+        "js":  {
+                   "file":  "polyAngleSumDeg.ts",
+                   "signature":  "n: number"
+               }
+    },
+    {
+        "example":  "round(5)",
+        "py":  {
+                   "file":  "round.py",
+                   "signature":  "round_(a: float)"
+               },
+        "name":  "round",
+        "js":  {
+                   "file":  "round.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "tetrahedronVolume.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "tetrahedronVolume(5)",
+        "py":  {
+                   "file":  "tetrahedronVolume.py",
+                   "signature":  "tetrahedron_volume(a: float)"
+               },
+        "name":  "tetrahedronVolume",
+        "js":  {
+                   "file":  "tetrahedronVolume.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "pytagoras.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "pytagoras(5, 5)",
+        "py":  {
+                   "file":  "pytagoras.py",
+                   "signature":  "pytagoras(a: float, b: float)"
+               },
+        "name":  "pytagoras",
+        "js":  {
+                   "file":  "pytagoras.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "cuboidVolume.cs",
+                   "signature":  "Calculate(double a, double b, double c)"
+               },
+        "example":  "cuboidVolume(5, 5, 5)",
+        "py":  {
+                   "file":  "cuboidVolume.py",
+                   "signature":  "cuboid_volume(a: float, b: float, c: float)"
+               },
+        "name":  "cuboidVolume",
+        "js":  {
+                   "file":  "cuboidVolume.ts",
+                   "signature":  "a: number, b: number, c: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "geometricProgressiona.cs",
+                   "signature":  "Calculate(double an, double n, double r)"
+               },
+        "example":  "geometricProgressiona(5, 5, 5)",
+        "py":  {
+                   "file":  "geometricProgressiona.py",
+                   "signature":  "geometric_progression_a(an: float, n: float, r: float)"
+               },
+        "name":  "geometricProgressiona",
+        "js":  {
+                   "file":  "geometricProgressiona.ts",
+                   "signature":  "an: number, n: number, r: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "circlePerimeter.cs",
+                   "signature":  "Calculate(double r)"
+               },
+        "example":  "circlePerimeter(5)",
+        "py":  {
+                   "file":  "circlePerimeter.py",
+                   "signature":  "circle_perimeter(r: float)"
+               },
+        "name":  "circlePerimeter",
+        "js":  {
+                   "file":  "circlePerimeter.ts",
+                   "signature":  "r: number"
+               }
+    },
+    {
+        "example":  "diff(5, null)",
+        "py":  {
+                   "file":  "diff.py",
+                   "signature":  "diff(f, density=5)"
+               },
+        "name":  "diff",
+        "js":  {
+                   "file":  "diff.ts",
+                   "signature":  "f: (x: number) =\u003e number, density = 5"
+               }
+    },
+    {
+        "example":  "cylinderArea(5, 5)",
+        "name":  "cylinderArea",
+        "js":  {
+                   "file":  "cylinderArea.ts",
+                   "signature":  "r: number, h: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "sphereVolume.cs",
+                   "signature":  "Calculate(double r)"
+               },
+        "example":  "sphereVolume(5)",
+        "py":  {
+                   "file":  "sphereVolume.py",
+                   "signature":  "sphere_volume(r: float)"
+               },
+        "name":  "sphereVolume",
+        "js":  {
+                   "file":  "sphereVolume.ts",
+                   "signature":  "r: number"
+               }
+    },
+    {
+        "example":  "triangularPyramidVolume(5, 5)",
+        "py":  {
+                   "file":  "triangularPyramidVolume.py",
+                   "signature":  "triangular_pyramid_volume(a: float, h: float)"
+               },
         "name":  "triangularPyramidVolume",
-        "signature":  "a: number, h: number",
-        "file":  "triangularPyramidVolume.ts"
+        "js":  {
+                   "file":  "triangularPyramidVolume.ts",
+                   "signature":  "a: number, h: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "parallelogramArea.cs",
+                   "signature":  "Calculate(double a, double h)"
+               },
+        "example":  "parallelogramArea(5, 5)",
+        "py":  {
+                   "file":  "parallelogramArea.py",
+                   "signature":  "parallelogram_area(a: float, h: float)"
+               },
+        "name":  "parallelogramArea",
+        "js":  {
+                   "file":  "parallelogramArea.ts",
+                   "signature":  "a: number, h: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "rightTriangleArea.cs",
+                   "signature":  "Calculate(double a, double b)"
+               },
+        "example":  "rightTriangleArea(5, 5)",
+        "py":  {
+                   "file":  "rightTriangleArea.py",
+                   "signature":  "right_triangle_area(a: float, b: float)"
+               },
+        "name":  "rightTriangleArea",
+        "js":  {
+                   "file":  "rightTriangleArea.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "cubicEquationFirst.cs",
+                   "signature":  "Calculate(double a, double b, double c, double d)"
+               },
+        "example":  "cubicEquationFirst(5, 5, 5, 5)",
+        "py":  {
+                   "file":  "cubicEquationFirst.py",
+                   "signature":  "cubic_equation_first(a: float, b: float, c: float, d: float)"
+               },
+        "name":  "cubicEquationFirst",
+        "js":  {
+                   "file":  "cubicEquationFirst.ts",
+                   "signature":  "a: number, b: number, c: number, d: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "infiniteSeries3.cs",
+                   "signature":  "Calculate(double x)"
+               },
+        "example":  "infiniteSeries3(5)",
+        "py":  {
+                   "file":  "infiniteSeries3.py",
+                   "signature":  "infinite_series_3(x: float)"
+               },
+        "name":  "infiniteSeries3",
+        "js":  {
+                   "file":  "infiniteSeries3.ts",
+                   "signature":  "x: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "sqrt.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "sqrt(5)",
+        "py":  {
+                   "file":  "sqrt.py",
+                   "signature":  "sqrt(a: float)"
+               },
+        "name":  "sqrt",
+        "js":  {
+                   "file":  "sqrt.ts",
+                   "signature":  "a: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "radToDegree.cs",
+                   "signature":  "Calculate(double rad)"
+               },
+        "example":  "radToDegree(5)",
+        "py":  {
+                   "file":  "radToDegree.py",
+                   "signature":  "rad_to_degree(rad: float)"
+               },
+        "name":  "radToDegree",
+        "js":  {
+                   "file":  "radToDegree.ts",
+                   "signature":  "rad: number"
+               }
+    },
+    {
+        "example":  "arithmeticProgressionSum(5, 5, 5)",
+        "py":  {
+                   "file":  "arithmeticProgressionSum.py",
+                   "signature":  "arithmetic_progression_sum(a1: float, n: float, d: float)"
+               },
+        "name":  "arithmeticProgressionSum",
+        "js":  {
+                   "file":  "arithmeticProgressionSum.ts",
+                   "signature":  "a1: number, n: number, d: number"
+               }
+    },
+    {
+        "example":  "isinrange(5, 5)",
+        "py":  {
+                   "file":  "isinrange.py",
+                   "signature":  "isinrange(a: float, b: float)"
+               },
+        "name":  "isinrange",
+        "js":  {
+                   "file":  "isinrange.ts",
+                   "signature":  "a: number, b: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "sigma.cs",
+                   "signature":  "Calculate(double n, double k)"
+               },
+        "example":  "sigma(5, 5)",
+        "py":  {
+                   "file":  "sigma.py",
+                   "signature":  "sigma(n: float, k: float)"
+               },
+        "name":  "sigma",
+        "js":  {
+                   "file":  "sigma.ts",
+                   "signature":  "n: number, k: number"
+               }
+    },
+    {
+        "cs":  {
+                   "file":  "tetrahedronArea.cs",
+                   "signature":  "Calculate(double a)"
+               },
+        "example":  "tetrahedronArea(5)",
+        "py":  {
+                   "file":  "tetrahedronArea.py",
+                   "signature":  "tetrahedron_area(a: float)"
+               },
+        "name":  "tetrahedronArea",
+        "js":  {
+                   "file":  "tetrahedronArea.ts",
+                   "signature":  "a: number"
+               }
     }
 ]
