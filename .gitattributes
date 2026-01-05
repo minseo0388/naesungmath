@@ -2,6 +2,6 @@
 web/* linguist-vendored
 
 # Attempt to include submodules (Note: GitHub Linguist often ignores submodules by default)
-js linguist-submodule=false
-cs linguist-submodule=false
-py linguist-submodule=false
+js linguist-submodule=true
+cs linguist-submodule=true
+py linguist-submodule=true
