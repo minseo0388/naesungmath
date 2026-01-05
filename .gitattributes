@@ -1,10 +1,14 @@
-# Ignore web folder CSS/HTML in language stats to prevent skew
-# Ignore web folder and scripts to prevent skew (Hide CSS/Shell)
-web/* linguist-vendored
-scripts/* linguist-vendored
+# 1. Force submodules to be recognized as my code (Exclude from submodule treatment)
+js/** linguist-submodule=false
+cs/** linguist-submodule=false
+py/** linguist-submodule=false
 
-# Attempt to include submodules
-# Note: linguist-submodule=false means "Do NOT treat as submodule (i.e., Count it)"
-js/* linguist-submodule=false
-cs/* linguist-submodule=false
-py/* linguist-submodule=false
+# 2. Force specific files to be detectable in stats
+*.js linguist-detectable=true
+*.ts linguist-detectable=true
+*.cs linguist-detectable=true
+*.py linguist-detectable=true
+
+# 3. Vendor (Ignore) Shell scripts and Web assets
+scripts/** linguist-vendored
+web/** linguist-vendored
