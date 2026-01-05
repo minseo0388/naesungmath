@@ -1,0 +1,14 @@
+# Backups
+*_backup/
+
+# Node modules
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Private Documentation/Guides (Local only)
+SUBMODULE_GUIDE.md
+DOCS_INTEGRATION_GUIDE.md
