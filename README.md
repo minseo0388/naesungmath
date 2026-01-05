@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/naesungmath.svg)](https://www.npmjs.com/package/naesungmath)
 [![install size](https://packagephobia.com/badge?p=naesungmath)](https://packagephobia.com/result?p=naesungmath)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 > A collection of mathematical formulas based on "Science is Magic! Let's memorize spells <Math Formula>" distributed by the Korean Mathematical Society and the Math Instructor Research Group.
 > 
@@ -97,6 +97,8 @@ Thanks to these wonderful people:
 
 ## 📝 License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
+
+**Note:** The `web` directory and `.github` directory are excluded from the GPLv3 license and remain under a permissive license (MIT or equivalent) to allow for broader usage and configuration flexibility.
 
 Copyright (c) 2020-2026 Choi Minseo
