@@ -1,0 +1,9 @@
+[submodule "js"]
+	path = js
+	url = https://github.com/minseo0388/naesungmath_js
+[submodule "cs"]
+	path = cs
+	url = https://github.com/minseo0388/naesungmath_cs
+[submodule "py"]
+	path = py
+	url = https://github.com/minseo0388/naesungmath_py
