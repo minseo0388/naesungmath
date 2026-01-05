@@ -1,0 +1,90 @@
+name: Combined Submodule Pipeline (Update & Deploy)
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Midnight KST (roughly, depending on UTC offset)
+  workflow_dispatch:      # Manual run
+
+permissions:
+  contents: write # For committing submodule updates
+  pages: write    # For deploying to GitHub Pages
+  id-token: write # For verifying Pages deployment
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Checkout with Full recursive history
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          token: ${{ secrets.SUBMODULE_UPDATE_TOKEN }}
+
+      # 2. Update Submodules to HEAD of tracked branch
+      - name: Update Submodules
+        run: |
+          git submodule update --remote --merge
+
+      # 3. Commit & Push if Changed
+      - name: Check and Push Changes
+        id: auto-commit
+        run: |
+          if git diff --quiet; then
+            echo "No changes in submodules."
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "Submodules updated. Committing..."
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+            git add .
+            git commit -m "chore(submodules): auto-update to latest HEAD"
+            git push
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      # 4. Build Documentation (Example Step)
+      # This step should read files from js/, cs/, py/ and generate static HTML.
+      - name: Build Documentation
+        run: |
+          mkdir -p public
+          echo "<h1>Naesungmath Docs</h1>" > public/index.html
+          echo "<p>Auto-generated from submodules.</p>" >> public/index.html
+          echo "<h2>Modules Found:</h2><ul>" >> public/index.html
+          
+          echo "<li><strong>JS:</strong> $(ls js/src/formulas | wc -l) files</li>" >> public/index.html
+          echo "<li><strong>CS:</strong> $(ls cs/src/formulas | wc -l) files</li>" >> public/index.html
+          echo "<li><strong>Py:</strong> $(ls py/src/formulas | wc -l) files</li>" >> public/index.html
+          echo "</ul>" >> public/index.html
+          echo "<p>Last Updated: $(date)</p>" >> public/index.html
+          
+          # If you have existing web files, verify copying method:
+          # cp -r web/* public/
+
+      # 5. Setup & Upload Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './public' # Deploy the built 'public' directory
+
+  deploy:
+    needs: update-and-deploy
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
