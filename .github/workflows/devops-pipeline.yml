@@ -1,14 +1,14 @@
-name: Combined Submodule Pipeline (Update & Deploy)
+name: DevOps Pipeline (Update & Deploy)
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Midnight KST (roughly, depending on UTC offset)
-  workflow_dispatch:      # Manual run
+    - cron: '0 0 * * *' # Every day at midnight
+  workflow_dispatch:      # Manual trigger
 
 permissions:
-  contents: write # For committing submodule updates
-  pages: write    # For deploying to GitHub Pages
-  id-token: write # For verifying Pages deployment
+  contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: "pages"
@@ -18,7 +18,7 @@ jobs:
   update-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. Checkout with Full recursive history
+      # 1. Checkout with Full recursive history and Token
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -48,23 +48,21 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      # 4. Build Documentation (Example Step)
-      # This step should read files from js/, cs/, py/ and generate static HTML.
+      # 4. Build Documentation (Example: Extracting info from actual code)
       - name: Build Documentation
         run: |
           mkdir -p public
-          echo "<h1>Naesungmath Docs</h1>" > public/index.html
-          echo "<p>Auto-generated from submodules.</p>" >> public/index.html
-          echo "<h2>Modules Found:</h2><ul>" >> public/index.html
+          echo "<h1>Naesungmath Documentation</h1>" > public/index.html
+          echo "<p>Generated from source code.</p>" >> public/index.html
           
-          echo "<li><strong>JS:</strong> $(ls js/src/formulas | wc -l) files</li>" >> public/index.html
-          echo "<li><strong>CS:</strong> $(ls cs/src/formulas | wc -l) files</li>" >> public/index.html
-          echo "<li><strong>Py:</strong> $(ls py/src/formulas | wc -l) files</li>" >> public/index.html
+          # Example: Count lines of code in submodules to prove we have access
+          echo "<h2>Statistics</h2><ul>" >> public/index.html
+          echo "<li><strong>JavaScript/TS:</strong> $(find js -name '*.ts' | wc -l) files</li>" >> public/index.html
+          echo "<li><strong>C#:</strong> $(find cs -name '*.cs' | wc -l) files</li>" >> public/index.html
+          echo "<li><strong>Python:</strong> $(find py -name '*.py' | wc -l) files</li>" >> public/index.html
           echo "</ul>" >> public/index.html
-          echo "<p>Last Updated: $(date)</p>" >> public/index.html
           
-          # If you have existing web files, verify copying method:
-          # cp -r web/* public/
+          echo "<p>Last Updated: $(date)</p>" >> public/index.html
 
       # 5. Setup & Upload Pages
       - name: Setup Pages
@@ -73,7 +71,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './public' # Deploy the built 'public' directory
+          path: './public'
 
   deploy:
     needs: update-and-deploy

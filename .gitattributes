@@ -1,0 +1,7 @@
+# Ignore web folder CSS/HTML in language stats to prevent skew
+web/* linguist-vendored
+
+# Attempt to include submodules (Note: GitHub Linguist often ignores submodules by default)
+js linguist-submodule=false
+cs linguist-submodule=false
+py linguist-submodule=false
