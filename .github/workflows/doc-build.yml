@@ -1,0 +1,37 @@
+name: Build Documentation
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository with submodules
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          token: ${{ secrets.SUBMODULE_UPDATE_TOKEN }} # Essential for private submodules
+
+      - name: Verify Submodule Access
+        run: |
+          echo "Checking JS submodule content:"
+          ls -R js | head -n 5
+          echo "Checking CS submodule content:"
+          ls -R cs | head -n 5
+          echo "Checking Py submodule content:"
+          ls -R py | head -n 5
+
+      # Placeholder for actual documentation build command
+      # - name: Install Dependencies
+      #   run: npm install
+
+      # - name: Build Docs
+      #   run: npm run build
