@@ -1,107 +1,102 @@
-# NaesungMath 3.0
-> **"Don't build equations. Use functions."**
-> **"식을 세우지 마세요. 함수로 대체하세요."**
+# Naesungmath
 
-![Version 3.1.0](https://img.shields.io/badge/version-3.1.0-blue.svg)
-![License](https://img.shields.io/badge/license-GPLv3-green.svg)
+[![npm version](https://img.shields.io/npm/v/naesungmath.svg)](https://www.npmjs.com/package/naesungmath)
+[![install size](https://packagephobia.com/badge?p=naesungmath)](https://packagephobia.com/result?p=naesungmath)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-NaesungMath is a multi-language mathematical library (C#, Python, JavaScript) designed to eliminate raw formulas from your business logic. It provides **Smart Solvers** that strictly follow verified logic and ensure consistent results across all platforms.
+> **"Science is Magic! Let's memorize spells <Math Formula>"**
+>
+> 대한수학회와 수학강사연구모임이 배포한 `과학은 마법이다! 주문을 외워보자 <수학공식>`을 기준으로 만든 수학 라이브러리입니다.
 
----
+This project aims to implement essential mathematical formulas in **JavaScript/TypeScript**, **Python**, and **C#**.
+Current Progress: **117 / 221** formulas completed (52.9%).
 
-## 🚀 Key Features
+# Update 3.1
+- **Refactoring & Consolidation**: All formulas have been refactored into consolidated "Smart Solver" classes (e.g., `Geometry`, `Calculus`).
+- **Unified Logic**: 100% consistency across JavaScript, Python, and C# implementations.
+- **Smart Solvers**: Introduced `solve` methods to automatically calculate missing variables.
 
-### 1. Smart Solver (스마트 솔버)
-No need to memorize different variations of a formula. Identify the variables you have, and the **Smart Solver** will automatically apply the correct logic.
+# Update 3.0
+- Switch to a Typescript to increase readability when using code.
+- Modify code to work automatically.
 
-**Example: Square Pyramid Volume**
-Instead of choosing between `SquarePyramidVolumeAB` (Base/Slant) or `SquarePyramidVolumeAH` (Base/Height), just pass what you know.
+## Table of Contents
 
-```python
-# python example
-from formulas.solid_3d import Solid3D
-
-# Case 1: Know Base Side (a) and Height (h)
-vol1 = Solid3D.square_pyramid_volume(base_side=5, height=10)
-
-# Case 2: Know Base Side (a) and Slant Edge (b)
-vol2 = Solid3D.square_pyramid_volume(base_side=5, slant_edge=10)
-```
-
-### 2. 100% Cross-Language Consistency
-Whether your backend is C#, your data science is Python, or your frontend is JavaScript, `NaesungMath` guarantees:
-*   **Identical Logic**: Formulas are 1:1 ported.
-*   **Identical Naming**: `PascalCase` (C#), `snake_case` (Py), `camelCase` (JS).
-*   **Identical Output**: Verified by cross-language test suites.
+- [Install & Usage](#-install--usage)
+- [Contributing](#-contributing)
+- [Maintainers](#-maintainers)
+- [License](#-license)
 
 ---
 
-## 📦 Installation & Usage
-
-### C# (.NET)
-```csharp
-using NaesungMath.Formulas;
-
-double area = Triangle.Area(baseSide: 10, height: 5);
-```
-
-### Python
-```bash
-pip install naesungmath
-```
-```python
-from formulas.triangle import Triangle
-
-area = Triangle.area(base_side=10, height=5)
-```
+## 📦 Install & Usage
 
 ### JavaScript / TypeScript
+
+**Install:**
 ```bash
 npm install naesungmath
+# or
+yarn add naesungmath
 ```
+
+**Usage:**
 ```typescript
 import Triangle from 'naesungmath/formulas/Triangle';
 
 const area = Triangle.area({ baseSide: 10, height: 5 });
 ```
 
----
+### Python
 
-## 📚 Function Index (Alphabetical)
+**Install:**
+```bash
+pip install naesungmath
+```
 
-### A - Analytic & Algebra
-*   **AnalyticGeometry**: `CenterGravity`, `Eccentricity`, `IsInRange`
-*   **BasicMath**: `Add`, `Divide`, `Factorial`, `Gcd`, `Multiply`, `Pow`, `Round`, `Sqrt`, `Subtract`
-*   **LinearAlgebra**: `Add`, `Determinant`, `Identity`, `Inverse`, `Multiply`, `MultiplyScalar`, `Normalize`, `OuterProduct`, `RandomVector`, `SqrtDotProduct`, `Subtract`, `Trace`, `Transpose`
+**Usage:**
+```python
+from formulas.triangle import Triangle
 
-### C - Calculus & Core
-*   **Calculus**: `Diff`, `InfiniteSeries`, `Integral`, `Maclaurin`, `Sigma`, `SigmaCubed`, `SigmaSquared`, `Taylor`
+area = Triangle.area(base_side=10, height=5)
+```
 
-### E - Equation
-*   **Equation**: `CubicRoots`, `Newton`, `QuadraticRoots`, `RootAndCoefficient`
+### C# (.NET)
 
-### G - Geometry (2D)
-*   **Circle**: `Area`, `ArcLength`, `Perimeter`, `SectorAngle`, `SectorArea`
-*   **Polygon**: `Area`, `DiagonalCount`, `EulerTheorem`, `HexagonArea`, `InteriorAngleDeg`, `InteriorAngleRad`, `InteriorAngleSumDeg`, `InteriorAngleSumRad`, `PentagonArea`, `PentagonDiagonal`, `PentagonHeight`
-*   **Quadrilateral**: `ParallelogramArea`, `RectangleArea`, `RectangleDiagonal`, `RectanglePerimeter`, `RhombusArea`, `SquareArea`, `TrapezoidArea`
-*   **Triangle**: `Area` (Smart), `AreaFromAngles`, `EquilateralHeight`, `Pythagoras`
+**Usage:**
+```csharp
+using NaesungMath.Formulas;
 
-### S - Solid Geometry (3D)
-*   **Solid3D**: `ConeArea`, `ConeVolume`, `CubeArea`, `CubeVolume`, `CuboidArea`, `CuboidDiagonal`, `CuboidVolume`, `CylinderArea`, `CylinderVolume`, `SphereArea`, `SphereVolume`, `SquarePyramidArea`, `SquarePyramidHeight`, `SquarePyramidVolume`, `TetrahedronArea`, `TetrahedronHeight`, `TetrahedronVolume`, `TriangularPyramidVolume`
-
-### T - Trigonometry
-*   **Trigonometry**: `DegreeToRad`, `Radian`, `RadToDegree`
+double area = Triangle.Area(baseSide: 10, height: 5);
+```
 
 ---
 
-## 🌍 Language Symmetry Guide
+## 🤝 Contributing
 
-| C# (PascalCase) | Python (snake_case) | JavaScript (camelCase) |
-| :--- | :--- | :--- |
-| `Solid3D.SquarePyramidVolume` | `Solid3D.square_pyramid_volume` | `Solid3D.squarePyramidVolume` |
-| `Triangle.Area` | `Triangle.area` | `Triangle.area` |
-| `BasicMath.Gcd` | `BasicMath.gcd` | `BasicMath.gcd` |
+We welcome contributions! Please feel free to open issues or submit Pull Requests.
+Review and accept Issue and Pull Request boldly.
+
+For more information, contact **minseo0388@daum.net** or **129dot03@kakao.com**.
 
 ---
 
-*Verified Zero-Omission Logic as of v3.1.0*
+## 👤 Maintainers
+
+- [@minseo0388(Choi Minseo)](https://github.com/minseo0388)
+
+## 🌟 Contributors
+
+Thanks to these wonderful people:
+- [@pmh_only](https://github.com/pmh-only)
+- [@AkiaCode](https://github.com/akiacode)
+- [@DPS0340](https://github.com/dps0340)
+- [@comjun04](https://github.com/comjun04)
+
+---
+
+## 📝 License
+
+This project is licensed under the [GPLv3 License](LICENSE).
+
+Copyright (c) 2020-2026 Choi Minseo
