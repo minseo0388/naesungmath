@@ -30,7 +30,15 @@ const mapping = {
     'rootFormulaMinus': ['Equation', 'quadraticRoots'],
     'rootFormulaEvenPlus': ['Equation', 'quadraticRoots'],
     'rootFormulaEvenMinus': ['Equation', 'quadraticRoots'],
-    'quadraticEquation': ['Equation', 'quadraticRoots'], // if exists
+    'quadraticEquation': ['Equation', 'quadraticRoots'],
+
+    // Sequences (Arithmetic/Geometric)
+    'arithmeticProgression': ['ArithmeticProgression', 'solve'],
+    'arithmeticProgressionSum': ['ArithmeticProgression', 'solve'], // merged
+    'arithmeticProgressionSumterm': ['ArithmeticProgression', 'solve'], // merged
+    'geometricProgression': ['GeometricProgression', 'solve'],
+    'geometricProgressionSum': ['GeometricProgression', 'solve'],
+    'geometricProgressionan': ['GeometricProgression', 'solve'],
 
     // Others
     'pentagonArea': ['Polygon', 'pentagonArea'],

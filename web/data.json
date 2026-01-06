@@ -989,17 +989,17 @@
     },
     {
         "cs": {
-            "file": "geometricProgressionSum.cs",
-            "signature": "Calculate(double a, double r, double n)"
+            "file": "GeometricProgression.cs",
+            "signature": "Solve(double a, double r, double n)"
         },
-        "example": "geometricProgressionSum(5, 5, 5)",
+        "example": "GeometricProgression.solve(5, 5, 5)",
         "py": {
-            "file": "geometricProgressionSum.py",
-            "signature": "geometric_progression_sum(a: float, r: float, n: float)"
+            "file": "geometric_progression.py",
+            "signature": "solve(a: float, r: float, n: float)"
         },
-        "name": "geometricProgressionSum",
+        "name": "GeometricProgression.solve",
         "js": {
-            "file": "geometricProgressionSum.ts",
+            "file": "GeometricProgression.ts",
             "signature": "a: number, r: number, n: number"
         }
     },
