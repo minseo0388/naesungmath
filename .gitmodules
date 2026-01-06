@@ -1,7 +1,4 @@
-[submodule "js"]
-	path = js
-	url = https://github.com/minseo0388/naesungmath_js
-	branch = main
+
 [submodule "cs"]
 	path = cs
 	url = https://github.com/minseo0388/naesungmath_cs
