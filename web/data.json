@@ -6,14 +6,15 @@
         },
         "example": "Solid3D.squarePyramidHeight(5, 5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "square_pyramid_height(a: float, b: float)"
         },
         "name": "Solid3D.squarePyramidHeight",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Height of a square pyramid"
     },
     {
         "cs": {
@@ -46,18 +47,19 @@
     {
         "cs": {
             "file": "AnalyticGeometry.cs",
-            "signature": "EvalEccentricity(double a, double b)"
+            "signature": "Eccentricity(double a, double b)"
         },
-        "example": "AnalyticGeometry.evalEccentricity(5, 5)",
+        "example": "AnalyticGeometry.eccentricity(5, 5)",
         "py": {
-            "file": "_analytic_geometry.py",
-            "signature": "eval_eccentricity(a: float, b: float)"
+            "file": "analytic_geometry.py",
+            "signature": "eccentricity(a: float, b: float)"
         },
-        "name": "AnalyticGeometry.evalEccentricity",
+        "name": "AnalyticGeometry.eccentricity",
         "js": {
             "file": "AnalyticGeometry.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Eccentricity of a conic section"
     },
     {
         "cs": {
@@ -73,23 +75,8 @@
         "js": {
             "file": "Polygon.ts",
             "signature": "a: number"
-        }
-    },
-    {
-        "cs": {
-            "file": "Equation.cs",
-            "signature": "QuadraticRoots(double a, double b, double c)"
         },
-        "example": "Equation.quadraticRoots(5, 5, 5)",
-        "py": {
-            "file": "equation.py",
-            "signature": "quadratic_roots(a: float, b: float, c: float)"
-        },
-        "name": "Equation.quadraticRoots",
-        "js": {
-            "file": "Equation.ts",
-            "signature": "a: number, b: number, c: number"
-        }
+        "description": "Area of a regular hexagon"
     },
     {
         "cs": {
@@ -110,42 +97,45 @@
     {
         "cs": {
             "file": "Calculus.cs",
-            "signature": "InfiniteSeries4(double x)"
+            "signature": "InfiniteSeries(double x)"
         },
-        "example": "Calculus.infiniteSeries4(5)",
+        "example": "Calculus.infiniteSeries(5)",
         "py": {
-            "file": "_calculus.py",
-            "signature": "infinite_series4(x: float)"
+            "file": "calculus.py",
+            "signature": "infinite_series(x: float)"
         },
-        "name": "Calculus.infiniteSeries4",
+        "name": "Calculus.infiniteSeries",
         "js": {
             "file": "Calculus.ts",
             "signature": "x: number"
-        }
+        },
+        "description": "Infinite Series Type 4"
     },
     {
-        "example": "Equation.newtonsMethod(5, 5, null)",
+        "example": "Equation.newton(5, 5, null)",
         "py": {
-            "file": "_equation.py",
-            "signature": "newtons_method(f, count, initx=2)"
+            "file": "equation.py",
+            "signature": "newton(f, count, initx=2)"
         },
-        "name": "Equation.newtonsMethod",
+        "name": "Equation.newton",
         "js": {
             "file": "Equation.ts",
             "signature": "f: (x: number) => number, count: number, initx = 2"
-        }
+        },
+        "description": "Newton's Method for roots"
     },
     {
         "example": "Calculus.integral(5, null)",
         "py": {
-            "file": "_calculus.py",
+            "file": "calculus.py",
             "signature": "integral(f, density=5)"
         },
         "name": "Calculus.integral",
         "js": {
             "file": "Calculus.ts",
             "signature": "f: (x: number) => number, density = 5"
-        }
+        },
+        "description": "Numerical Integration"
     },
     {
         "cs": {
@@ -161,7 +151,8 @@
         "js": {
             "file": "Polygon.ts",
             "signature": "a: number"
-        }
+        },
+        "description": "Area of a regular pentagon"
     },
     {
         "cs": {
@@ -170,14 +161,15 @@
         },
         "example": "Solid3D.cubeArea(5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "cube_area(a: float)"
         },
         "name": "Solid3D.cubeArea",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number"
-        }
+        },
+        "description": "Surface area of a cube"
     },
     {
         "cs": {
@@ -198,18 +190,19 @@
     {
         "cs": {
             "file": "Trigonometry.cs",
-            "signature": "Radian(double a)"
+            "signature": "DegreeToRad(double a)"
         },
-        "example": "Trigonometry.radian(5)",
+        "example": "Trigonometry.degreeToRad(5)",
         "py": {
-            "file": "_trigonometry.py",
-            "signature": "radian(a: float)"
+            "file": "trigonometry.py",
+            "signature": "degree_to_rad(a: float)"
         },
-        "name": "Trigonometry.radian",
+        "name": "Trigonometry.degreeToRad",
         "js": {
             "file": "Trigonometry.ts",
             "signature": "a: number"
-        }
+        },
+        "description": "Degrees to Radians conversion"
     },
     {
         "cs": {
@@ -218,14 +211,15 @@
         },
         "example": "Solid3D.cuboidDiagonal(5, 5, 5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "cuboid_diagonal(a: float, b: float, c: float)"
         },
         "name": "Solid3D.cuboidDiagonal",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number, b: number, c: number"
-        }
+        },
+        "description": "Diagonal length of a cuboid"
     },
     {
         "cs": {
@@ -234,30 +228,32 @@
         },
         "example": "Quadrilateral.rectanglePerimeter(5, 5)",
         "py": {
-            "file": "_quadrilateral.py",
+            "file": "quadrilateral.py",
             "signature": "rectangle_perimeter(a: float, b: float)"
         },
         "name": "Quadrilateral.rectanglePerimeter",
         "js": {
             "file": "Quadrilateral.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Perimeter of a rectangle"
     },
     {
         "cs": {
-            "file": "ovalArea.cs",
-            "signature": "Calculate(double a, double b)"
+            "file": "AnalyticGeometry.cs",
+            "signature": "EllipseArea(double a, double b)"
         },
-        "example": "ovalArea(5, 5)",
+        "example": "AnalyticGeometry.ellipseArea(5, 5)",
         "py": {
-            "file": "ovalArea.py",
-            "signature": "oval_area(a: float, b: float)"
+            "file": "analytic_geometry.py",
+            "signature": "ellipse_area(a: float, b: float)"
         },
-        "name": "ovalArea",
+        "name": "AnalyticGeometry.ellipseArea",
         "js": {
-            "file": "ovalArea.ts",
+            "file": "AnalyticGeometry.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Area of an ellipse"
     },
     {
         "cs": {
@@ -342,14 +338,15 @@
         },
         "example": "BasicMath.factorial(5)",
         "py": {
-            "file": "_basic_math.py",
+            "file": "basic_math.py",
             "signature": "factorial(n: int)"
         },
         "name": "BasicMath.factorial",
         "js": {
             "file": "BasicMath.ts",
             "signature": "n: number"
-        }
+        },
+        "description": "Factorial of a number"
     },
     {
         "cs": {
@@ -370,18 +367,19 @@
     {
         "cs": {
             "file": "Solid3D.cs",
-            "signature": "SquarePyramidVolumeAB(double a, double b)"
+            "signature": "SquarePyramidVolume(double a, double b)"
         },
-        "example": "Solid3D.squarePyramidVolumeAB(5, 5)",
+        "example": "Solid3D.squarePyramidVolume(5, 5)",
         "py": {
-            "file": "_solid3_d.py",
-            "signature": "square_pyramid_volume_a_b(a: float, b: float)"
+            "file": "solid3_d.py",
+            "signature": "square_pyramid_volume(a: float, b: float)"
         },
-        "name": "Solid3D.squarePyramidVolumeAB",
+        "name": "Solid3D.squarePyramidVolume",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Volume of a square pyramid"
     },
     {
         "cs": {
@@ -390,14 +388,15 @@
         },
         "example": "Solid3D.sphereArea(5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "sphere_area(r: float)"
         },
         "name": "Solid3D.sphereArea",
         "js": {
             "file": "Solid3D.ts",
             "signature": "r: number"
-        }
+        },
+        "description": "Surface area of a sphere"
     },
     {
         "cs": {
@@ -406,14 +405,15 @@
         },
         "example": "Solid3D.cuboidArea(5, 5, 5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "cuboid_area(a: float, b: float, c: float)"
         },
         "name": "Solid3D.cuboidArea",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number, b: number, c: number"
-        }
+        },
+        "description": "Surface area of a cuboid"
     },
     {
         "cs": {
@@ -422,58 +422,45 @@
         },
         "example": "LinearAlgebra.trace([[1, 0], [0, 1]])",
         "py": {
-            "file": "_linear_algebra.py",
+            "file": "linear_algebra.py",
             "signature": "trace(matrix: list[list[float]])"
         },
         "name": "LinearAlgebra.trace",
         "js": {
             "file": "LinearAlgebra.ts",
             "signature": "matrix: number[][]"
-        }
+        },
+        "description": "Matrix Trace"
     },
     {
         "example": "Calculus.taylor(5, 5, 5)",
         "py": {
-            "file": "_calculus.py",
+            "file": "calculus.py",
             "signature": "taylor(f, a, count)"
         },
         "name": "Calculus.taylor",
         "js": {
             "file": "Calculus.ts",
             "signature": "f: (x: number) => number, a: number, count: number"
-        }
+        },
+        "description": "Taylor Series expansion"
     },
     {
         "cs": {
-            "file": "caret.cs",
-            "signature": "Calculate(double a, double b)"
+            "file": "BasicMath.cs",
+            "signature": "Pow(double a, double b)"
         },
-        "example": "caret(5, 5)",
+        "example": "BasicMath.pow(5, 5)",
         "py": {
-            "file": "caret.py",
-            "signature": "caret(a: float, b: float)"
+            "file": "basic_math.py",
+            "signature": "pow(a: float, b: float)"
         },
-        "name": "caret",
+        "name": "BasicMath.pow",
         "js": {
-            "file": "caret.ts",
+            "file": "BasicMath.ts",
             "signature": "a: number, b: number"
-        }
-    },
-    {
-        "cs": {
-            "file": "Equation.cs",
-            "signature": "QuadraticRoots(double a, double b, double c)"
         },
-        "example": "Equation.quadraticRoots(5, 5, 5)",
-        "py": {
-            "file": "equation.py",
-            "signature": "quadratic_roots(a: float, b: float, c: float)"
-        },
-        "name": "Equation.quadraticRoots",
-        "js": {
-            "file": "Equation.ts",
-            "signature": "a: number, b: number, c: number"
-        }
+        "description": "Exponentiation"
     },
     {
         "cs": {
@@ -482,26 +469,28 @@
         },
         "example": "LinearAlgebra.determinant([[1, 0], [0, 1]])",
         "py": {
-            "file": "_linear_algebra.py",
+            "file": "linear_algebra.py",
             "signature": "determinant(matrix: list[list[float]])"
         },
         "name": "LinearAlgebra.determinant",
         "js": {
             "file": "LinearAlgebra.ts",
             "signature": "matrix: number[][]"
-        }
+        },
+        "description": "Matrix Determinant"
     },
     {
         "example": "Trigonometry.degreeToRad(5)",
         "py": {
-            "file": "_trigonometry.py",
+            "file": "trigonometry.py",
             "signature": "degree_to_rad(deg: float)"
         },
         "name": "Trigonometry.degreeToRad",
         "js": {
             "file": "Trigonometry.ts",
             "signature": "deg: number"
-        }
+        },
+        "description": "Degrees to Radians conversion"
     },
     {
         "cs": {
@@ -542,14 +531,15 @@
         },
         "example": "Quadrilateral.rhombusArea(5, 5)",
         "py": {
-            "file": "_quadrilateral.py",
+            "file": "quadrilateral.py",
             "signature": "rhombus_area(a: float, b: float)"
         },
         "name": "Quadrilateral.rhombusArea",
         "js": {
             "file": "Quadrilateral.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Area of a rhombus"
     },
     {
         "example": "Triangle.areaAngle(5, 5, 5)",
@@ -565,35 +555,20 @@
     },
     {
         "cs": {
-            "file": "BasicMath.cs",
-            "signature": "Pow(double a, double b)"
-        },
-        "example": "BasicMath.pow(5, 5)",
-        "py": {
-            "file": "_basic_math.py",
-            "signature": "pow(a: float, b: float)"
-        },
-        "name": "BasicMath.pow",
-        "js": {
-            "file": "BasicMath.ts",
-            "signature": "a: number, b: number"
-        }
-    },
-    {
-        "cs": {
             "file": "Solid3D.cs",
-            "signature": "SquarePyramidVolumeAH(double a, double h)"
+            "signature": "SquarePyramidVolume(double a, double h)"
         },
-        "example": "Solid3D.squarePyramidVolumeAH(5, 5)",
+        "example": "Solid3D.squarePyramidVolume(5, 5)",
         "py": {
-            "file": "_solid3_d.py",
-            "signature": "square_pyramid_volume_a_h(a: float, h: float)"
+            "file": "solid3_d.py",
+            "signature": "square_pyramid_volume(a: float, h: float)"
         },
-        "name": "Solid3D.squarePyramidVolumeAH",
+        "name": "Solid3D.squarePyramidVolume",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number, h: number"
-        }
+        },
+        "description": "Volume of a square pyramid"
     },
     {
         "example": "LinearAlgebra.multiplyScalar([[1, 0], [0, 1]], 5)",
@@ -614,14 +589,15 @@
         },
         "example": "AnalyticGeometry.centerGravity(5, 5, 5, 5, 5, 5)",
         "py": {
-            "file": "_analytic_geometry.py",
+            "file": "analytic_geometry.py",
             "signature": "center_gravity(a1: float, a2: float, b1: float, b2: float, c1: float, c2: float)"
         },
         "name": "AnalyticGeometry.centerGravity",
         "js": {
             "file": "AnalyticGeometry.ts",
             "signature": "a1: number, a2: number, b1: number, b2: number, c1: number, c2: number"
-        }
+        },
+        "description": "Center of Gravity (Triangle)"
     },
     {
         "cs": {
@@ -630,30 +606,32 @@
         },
         "example": "BasicMath.gcd(5, 5)",
         "py": {
-            "file": "_basic_math.py",
+            "file": "basic_math.py",
             "signature": "gcd(a: int, b: int)"
         },
         "name": "BasicMath.gcd",
         "js": {
             "file": "BasicMath.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Greatest Common Divisor"
     },
     {
         "cs": {
-            "file": "circumference.cs",
-            "signature": "Calculate(double a)"
+            "file": "Circle.cs",
+            "signature": "Perimeter(double a)"
         },
-        "example": "circumference(5)",
+        "example": "Circle.perimeter(5)",
         "py": {
-            "file": "circumference.py",
-            "signature": "circumference(a: float)"
+            "file": "circle.py",
+            "signature": "perimeter(a: float)"
         },
-        "name": "circumference",
+        "name": "Circle.perimeter",
         "js": {
-            "file": "circumference.ts",
+            "file": "Circle.ts",
             "signature": "a: number"
-        }
+        },
+        "description": "Circumference of a circle"
     },
     {
         "cs": {
@@ -702,26 +680,28 @@
         },
         "example": "Quadrilateral.rectangleDiagonal(5, 5)",
         "py": {
-            "file": "_quadrilateral.py",
+            "file": "quadrilateral.py",
             "signature": "rectangle_diagonal(a: float, b: float)"
         },
         "name": "Quadrilateral.rectangleDiagonal",
         "js": {
             "file": "Quadrilateral.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Diagonal of a rectangle"
     },
     {
         "example": "LinearAlgebra.gaussian([[1, 0], [0, 1]], 5, 5)",
         "py": {
-            "file": "_linear_algebra.py",
+            "file": "linear_algebra.py",
             "signature": "gaussian(matrix: list[list[float]], m: int, n: int)"
         },
         "name": "LinearAlgebra.gaussian",
         "js": {
             "file": "LinearAlgebra.ts",
             "signature": "matrix: number[][], m: number, n: number"
-        }
+        },
+        "description": "Gaussian Elimination"
     },
     {
         "example": "Triangle.areaSide(5, 5)",
@@ -742,14 +722,15 @@
         },
         "example": "LinearAlgebra.sqrtDotProduct([1, 2, 3], [1, 2, 3])",
         "py": {
-            "file": "_linear_algebra.py",
+            "file": "linear_algebra.py",
             "signature": "sqrt_dot_product(row1: list[float], row2: list[float])"
         },
         "name": "LinearAlgebra.sqrtDotProduct",
         "js": {
             "file": "LinearAlgebra.ts",
             "signature": "row1: number[], row2: number[]"
-        }
+        },
+        "description": "Square root of Dot Product"
     },
     {
         "cs": {
@@ -758,26 +739,28 @@
         },
         "example": "Solid3D.tetrahedronHeight(5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "tetrahedron_height(a: float)"
         },
         "name": "Solid3D.tetrahedronHeight",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number"
-        }
+        },
+        "description": "Height of a regular tetrahedron"
     },
     {
         "example": "LinearAlgebra.randomVector(5, null)",
         "py": {
-            "file": "_linear_algebra.py",
+            "file": "linear_algebra.py",
             "signature": "random_vector(length: int, norm: float = 1)"
         },
         "name": "LinearAlgebra.randomVector",
         "js": {
             "file": "LinearAlgebra.ts",
             "signature": "len: number, norm = 1"
-        }
+        },
+        "description": "Generates a random vector"
     },
     {
         "cs": {
@@ -798,18 +781,19 @@
     {
         "cs": {
             "file": "Calculus.cs",
-            "signature": "SigmaCube(double n, double k)"
+            "signature": "SigmaCubed(double n, double k)"
         },
-        "example": "Calculus.sigmaCube(5, 5)",
+        "example": "Calculus.sigmaCubed(5, 5)",
         "py": {
-            "file": "_calculus.py",
-            "signature": "sigma_cube(n: float, k: float)"
+            "file": "calculus.py",
+            "signature": "sigma_cubed(n: float, k: float)"
         },
-        "name": "Calculus.sigmaCube",
+        "name": "Calculus.sigmaCubed",
         "js": {
             "file": "Calculus.ts",
             "signature": "n: number, k: number"
-        }
+        },
+        "description": "Sum of cubes"
     },
     {
         "example": "LUDecomposition([[1, 0], [0, 1]])",
@@ -824,28 +808,30 @@
         }
     },
     {
-        "example": "arithmeticProgressiond(5, 5, 5)",
+        "example": "ArithmeticProgression.solve(5, 5, 5)",
         "py": {
-            "file": "arithmeticProgressiond.py",
-            "signature": "arithmetic_progression_d(a: float, n: float, s: float)"
+            "file": "arithmetic_progression.py",
+            "signature": "solve(a: float, n: float, s: float)"
         },
-        "name": "arithmeticProgressiond",
+        "name": "ArithmeticProgression.solve",
         "js": {
-            "file": "arithmeticProgressiond.ts",
+            "file": "ArithmeticProgression.ts",
             "signature": "a: number, n: number, s: number"
-        }
+        },
+        "description": "AP Common Difference"
     },
     {
         "example": "LinearAlgebra.transpose([[1, 0], [0, 1]])",
         "py": {
-            "file": "_linear_algebra.py",
+            "file": "linear_algebra.py",
             "signature": "transpose(mat: list[list[float]])"
         },
         "name": "LinearAlgebra.transpose",
         "js": {
             "file": "LinearAlgebra.ts",
             "signature": "mat: number[][]"
-        }
+        },
+        "description": "Matrix Transpose"
     },
     {
         "cs": {
@@ -854,26 +840,28 @@
         },
         "example": "Quadrilateral.squareArea(5)",
         "py": {
-            "file": "_quadrilateral.py",
+            "file": "quadrilateral.py",
             "signature": "square_area(a: float)"
         },
         "name": "Quadrilateral.squareArea",
         "js": {
             "file": "Quadrilateral.ts",
             "signature": "a: number"
-        }
+        },
+        "description": "Area of a square"
     },
     {
         "example": "Quadrilateral.trapezoidArea(5, 5, 5)",
         "py": {
-            "file": "_quadrilateral.py",
+            "file": "quadrilateral.py",
             "signature": "trapezoid_area(a: float, b: float, h: float)"
         },
         "name": "Quadrilateral.trapezoidArea",
         "js": {
             "file": "Quadrilateral.ts",
             "signature": "a: number, b: number, h: number"
-        }
+        },
+        "description": "Area of a trapezoid"
     },
     {
         "cs": {
@@ -898,14 +886,15 @@
         },
         "example": "Solid3D.coneArea(5, 5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "cone_area(r: float, h: float)"
         },
         "name": "Solid3D.coneArea",
         "js": {
             "file": "Solid3D.ts",
             "signature": "r: number, h: number"
-        }
+        },
+        "description": "Surface area of a cone"
     },
     {
         "cs": {
@@ -914,22 +903,24 @@
         },
         "example": "BasicMath.divide(5, 5)",
         "py": {
-            "file": "_basic_math.py",
+            "file": "basic_math.py",
             "signature": "divide(a: float, b: float)"
         },
         "name": "BasicMath.divide",
         "js": {
             "file": "BasicMath.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Division"
     },
     {
-        "example": "ACORN(null, null, null)",
-        "name": "ACORN",
+        "example": "BasicMath.acorn(null, null, null)",
+        "name": "BasicMath.acorn",
         "js": {
-            "file": "ACORN.ts",
+            "file": "BasicMath.ts",
             "signature": "seed = new Date().getTime(), moduloPower = 60, order = 10"
-        }
+        },
+        "description": "ACORN PRNG"
     },
     {
         "cs": {
@@ -964,28 +955,30 @@
         }
     },
     {
-        "example": "eulerPolyhedronTheorem(5, 5, 5)",
+        "example": "Polygon.eulerTheorem(5, 5, 5)",
         "py": {
-            "file": "eulerPolyhedronTheorem.py",
-            "signature": "euler_polyhedron_theorem(v: float, e: float, f: float)"
+            "file": "polygon.py",
+            "signature": "euler_theorem(v: float, e: float, f: float)"
         },
-        "name": "eulerPolyhedronTheorem",
+        "name": "Polygon.eulerTheorem",
         "js": {
-            "file": "eulerPolyhedronTheorem.ts",
+            "file": "Polygon.ts",
             "signature": "v: number, e: number, f: number"
-        }
+        },
+        "description": "Euler's Polyhedron Theorem"
     },
     {
-        "example": "random(5, 5)",
+        "example": "LinearAlgebra.randomVector(5, 5)",
         "py": {
-            "file": "random.py",
-            "signature": "random_(a: int, b: int)"
+            "file": "linear_algebra.py",
+            "signature": "random_vector(a: int, b: int)"
         },
-        "name": "random",
+        "name": "LinearAlgebra.randomVector",
         "js": {
-            "file": "random.ts",
+            "file": "LinearAlgebra.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Generates a random vector"
     },
     {
         "cs": {
@@ -1006,34 +999,36 @@
     {
         "cs": {
             "file": "Solid3D.cs",
-            "signature": "SquarePyramidAreaAH(double a, double h)"
+            "signature": "SquarePyramidArea(double a, double h)"
         },
-        "example": "Solid3D.squarePyramidAreaAH(5, 5)",
+        "example": "Solid3D.squarePyramidArea(5, 5)",
         "py": {
-            "file": "_solid3_d.py",
-            "signature": "square_pyramid_area_a_h(a: float, h: float)"
+            "file": "solid3_d.py",
+            "signature": "square_pyramid_area(a: float, h: float)"
         },
-        "name": "Solid3D.squarePyramidAreaAH",
+        "name": "Solid3D.squarePyramidArea",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number, h: number"
-        }
+        },
+        "description": "Surface area of a square pyramid"
     },
     {
         "cs": {
             "file": "BasicMath.cs",
-            "signature": "Minus(double a, double b)"
+            "signature": "Subtract(double a, double b)"
         },
-        "example": "BasicMath.minus(5, 5)",
+        "example": "BasicMath.subtract(5, 5)",
         "py": {
-            "file": "_basic_math.py",
-            "signature": "minus(a: float, b: float)"
+            "file": "basic_math.py",
+            "signature": "subtract(a: float, b: float)"
         },
-        "name": "BasicMath.minus",
+        "name": "BasicMath.subtract",
         "js": {
             "file": "BasicMath.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Subtraction"
     },
     {
         "cs": {
@@ -1042,42 +1037,45 @@
         },
         "example": "Polygon.pentagonDiagonal(5)",
         "py": {
-            "file": "_polygon.py",
+            "file": "polygon.py",
             "signature": "pentagon_diagonal(a: float)"
         },
         "name": "Polygon.pentagonDiagonal",
         "js": {
             "file": "Polygon.ts",
             "signature": "a: number"
-        }
+        },
+        "description": "Diagonal of a regular pentagon"
     },
     {
         "cs": {
             "file": "Calculus.cs",
-            "signature": "SigmaSquare(double n, double k)"
+            "signature": "SigmaSquared(double n, double k)"
         },
-        "example": "Calculus.sigmaSquare(5, 5)",
+        "example": "Calculus.sigmaSquared(5, 5)",
         "py": {
-            "file": "_calculus.py",
-            "signature": "sigma_square(n: float, k: float)"
+            "file": "calculus.py",
+            "signature": "sigma_squared(n: float, k: float)"
         },
-        "name": "Calculus.sigmaSquare",
+        "name": "Calculus.sigmaSquared",
         "js": {
             "file": "Calculus.ts",
             "signature": "n: number, k: number"
-        }
+        },
+        "description": "Sum of squares"
     },
     {
-        "example": "LinearAlgebra.multiply([[1, 0], [0, 1]], [[1, 0], [0, 1]])",
+        "example": "BasicMath.multiply([[1, 0], [0, 1]], [[1, 0], [0, 1]])",
         "py": {
-            "file": "_linear_algebra.py",
+            "file": "basic_math.py",
             "signature": "multiply(matrixA: list[list[float]], matrixB: list[list[float]])"
         },
-        "name": "LinearAlgebra.multiply",
+        "name": "BasicMath.multiply",
         "js": {
-            "file": "LinearAlgebra.ts",
+            "file": "BasicMath.ts",
             "signature": "matrixA: number[][], matrixB: number[][]"
-        }
+        },
+        "description": "Multiplication"
     },
     {
         "cs": {
@@ -1086,14 +1084,15 @@
         },
         "example": "Quadrilateral.squareArea(5, 5, 5)",
         "py": {
-            "file": "_quadrilateral.py",
+            "file": "quadrilateral.py",
             "signature": "square_area(a: float, b: float, t: float)"
         },
         "name": "Quadrilateral.squareArea",
         "js": {
             "file": "Quadrilateral.ts",
             "signature": "a: number, b: number, t: number"
-        }
+        },
+        "description": "Area of a square"
     },
     {
         "cs": {
@@ -1113,35 +1112,37 @@
     },
     {
         "cs": {
-            "file": "geometricProgressionn.cs",
-            "signature": "Calculate(double an, double a, double r)"
+            "file": "GeometricProgression.cs",
+            "signature": "Solve(double an, double a, double r)"
         },
-        "example": "geometricProgressionn(5, 5, 5)",
+        "example": "GeometricProgression.solve(5, 5, 5)",
         "py": {
-            "file": "geometricProgressionn.py",
-            "signature": "geometric_progression_n(an: float, a: float, r: float)"
+            "file": "geometric_progression.py",
+            "signature": "solve(an: float, a: float, r: float)"
         },
-        "name": "geometricProgressionn",
+        "name": "GeometricProgression.solve",
         "js": {
-            "file": "geometricProgressionn.ts",
+            "file": "GeometricProgression.ts",
             "signature": "an: number, a: number, r: number"
-        }
+        },
+        "description": "GP Number of Terms"
     },
     {
         "cs": {
             "file": "BasicMath.cs",
-            "signature": "Plus(double a, double b)"
+            "signature": "Add(double a, double b)"
         },
-        "example": "BasicMath.plus(5, 5)",
+        "example": "BasicMath.add(5, 5)",
         "py": {
-            "file": "_basic_math.py",
-            "signature": "plus(a: float, b: float)"
+            "file": "basic_math.py",
+            "signature": "add(a: float, b: float)"
         },
-        "name": "BasicMath.plus",
+        "name": "BasicMath.add",
         "js": {
             "file": "BasicMath.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Addition"
     },
     {
         "cs": {
@@ -1150,14 +1151,15 @@
         },
         "example": "BasicMath.multiply(5, 5)",
         "py": {
-            "file": "_basic_math.py",
+            "file": "basic_math.py",
             "signature": "multiply(a: float, b: float)"
         },
         "name": "BasicMath.multiply",
         "js": {
             "file": "BasicMath.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Multiplication"
     },
     {
         "cs": {
@@ -1166,30 +1168,15 @@
         },
         "example": "Solid3D.coneVolume(5, 5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "cone_volume(r: float, h: float)"
         },
         "name": "Solid3D.coneVolume",
         "js": {
             "file": "Solid3D.ts",
             "signature": "r: number, h: number"
-        }
-    },
-    {
-        "cs": {
-            "file": "Calculus.cs",
-            "signature": "InfiniteSeries1(double x)"
         },
-        "example": "Calculus.infiniteSeries1(5)",
-        "py": {
-            "file": "_calculus.py",
-            "signature": "infinite_series1(x: float)"
-        },
-        "name": "Calculus.infiniteSeries1",
-        "js": {
-            "file": "Calculus.ts",
-            "signature": "x: number"
-        }
+        "description": "Volume of a cone"
     },
     {
         "cs": {
@@ -1198,30 +1185,15 @@
         },
         "example": "Solid3D.cubeVolume(5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "cube_volume(a: float)"
         },
         "name": "Solid3D.cubeVolume",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number"
-        }
-    },
-    {
-        "cs": {
-            "file": "Calculus.cs",
-            "signature": "InfiniteSeries2(double x)"
         },
-        "example": "Calculus.infiniteSeries2(5)",
-        "py": {
-            "file": "_calculus.py",
-            "signature": "infinite_series2(x: float)"
-        },
-        "name": "Calculus.infiniteSeries2",
-        "js": {
-            "file": "Calculus.ts",
-            "signature": "x: number"
-        }
+        "description": "Volume of a cube"
     },
     {
         "cs": {
@@ -1258,30 +1230,32 @@
     {
         "cs": {
             "file": "Solid3D.cs",
-            "signature": "SquarePyramidAreaAB(double a, double b)"
+            "signature": "SquarePyramidArea(double a, double b)"
         },
-        "example": "Solid3D.squarePyramidAreaAB(5, 5)",
+        "example": "Solid3D.squarePyramidArea(5, 5)",
         "py": {
-            "file": "_solid3_d.py",
-            "signature": "square_pyramid_area_a_b(a: float, b: float)"
+            "file": "solid3_d.py",
+            "signature": "square_pyramid_area(a: float, b: float)"
         },
-        "name": "Solid3D.squarePyramidAreaAB",
+        "name": "Solid3D.squarePyramidArea",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number, b: number"
-        }
+        },
+        "description": "Surface area of a square pyramid"
     },
     {
-        "example": "arithmeticProgressionn(5, 5, 5)",
+        "example": "ArithmeticProgression.solve(5, 5, 5)",
         "py": {
-            "file": "arithmeticProgressionn.py",
-            "signature": "arithmetic_progression_n(d: float, n: float, s: float)"
+            "file": "arithmetic_progression.py",
+            "signature": "solve(d: float, n: float, s: float)"
         },
-        "name": "arithmeticProgressionn",
+        "name": "ArithmeticProgression.solve",
         "js": {
-            "file": "arithmeticProgressionn.ts",
+            "file": "ArithmeticProgression.ts",
             "signature": "d: number, n: number, s: number"
-        }
+        },
+        "description": "AP Number of Terms"
     },
     {
         "cs": {
@@ -1290,14 +1264,15 @@
         },
         "example": "Equation.rootAndCoefficient(5, 5, 5, 5)",
         "py": {
-            "file": "_equation.py",
+            "file": "equation.py",
             "signature": "root_and_coefficient(a: float, b: float, c: float, type_: int)"
         },
         "name": "Equation.rootAndCoefficient",
         "js": {
             "file": "Equation.ts",
             "signature": "a: number, b: number, c: number, type: number"
-        }
+        },
+        "description": "Relation between roots and coefficients"
     },
     {
         "cs": {
@@ -1322,14 +1297,15 @@
         },
         "example": "Polygon.pentagonHeight(5)",
         "py": {
-            "file": "_polygon.py",
+            "file": "polygon.py",
             "signature": "pentagon_height(a: float)"
         },
         "name": "Polygon.pentagonHeight",
         "js": {
             "file": "Polygon.ts",
             "signature": "a: number"
-        }
+        },
+        "description": "Height of a regular pentagon"
     },
     {
         "cs": {
@@ -1354,30 +1330,15 @@
         },
         "example": "Quadrilateral.rectangleArea(5, 5)",
         "py": {
-            "file": "_quadrilateral.py",
+            "file": "quadrilateral.py",
             "signature": "rectangle_area(a: float, b: float)"
         },
         "name": "Quadrilateral.rectangleArea",
         "js": {
             "file": "Quadrilateral.ts",
             "signature": "a: number, b: number"
-        }
-    },
-    {
-        "cs": {
-            "file": "Equation.cs",
-            "signature": "QuadraticRoots(double a, double b, double c)"
         },
-        "example": "Equation.quadraticRoots(5, 5, 5)",
-        "py": {
-            "file": "equation.py",
-            "signature": "quadratic_roots(a: float, b: float, c: float)"
-        },
-        "name": "Equation.quadraticRoots",
-        "js": {
-            "file": "Equation.ts",
-            "signature": "a: number, b: number, c: number"
-        }
+        "description": "Area of a rectangle"
     },
     {
         "example": "Solid3D.cylinderVolume(5, 5)",
@@ -1385,23 +1346,8 @@
         "js": {
             "file": "Solid3D.ts",
             "signature": "r: number, h: number"
-        }
-    },
-    {
-        "cs": {
-            "file": "Circle.cs",
-            "signature": "SectorAngle(double r, double l)"
         },
-        "example": "Circle.sectorAngle(5, 5)",
-        "py": {
-            "file": "_circle.py",
-            "signature": "sector_angle(r: float, l: float)"
-        },
-        "name": "Circle.sectorAngle",
-        "js": {
-            "file": "Circle.ts",
-            "signature": "r: number, l: number"
-        }
+        "description": "Volume of a cylinder"
     },
     {
         "example": "GaussSeidel([[1, 0], [0, 1]], null)",
@@ -1430,14 +1376,15 @@
     {
         "example": "BasicMath.round(5)",
         "py": {
-            "file": "_basic_math.py",
+            "file": "basic_math.py",
             "signature": "round(a: float)"
         },
         "name": "BasicMath.round",
         "js": {
             "file": "BasicMath.ts",
             "signature": "a: number"
-        }
+        },
+        "description": "Round to nearest integer"
     },
     {
         "cs": {
@@ -1446,14 +1393,15 @@
         },
         "example": "Solid3D.tetrahedronVolume(5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "tetrahedron_volume(a: float)"
         },
         "name": "Solid3D.tetrahedronVolume",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number"
-        }
+        },
+        "description": "Volume of a regular tetrahedron"
     },
     {
         "cs": {
@@ -1478,30 +1426,32 @@
         },
         "example": "Solid3D.cuboidVolume(5, 5, 5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "cuboid_volume(a: float, b: float, c: float)"
         },
         "name": "Solid3D.cuboidVolume",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number, b: number, c: number"
-        }
+        },
+        "description": "Volume of a cuboid"
     },
     {
         "cs": {
-            "file": "geometricProgressiona.cs",
-            "signature": "Calculate(double an, double n, double r)"
+            "file": "GeometricProgression.cs",
+            "signature": "Solve(double an, double n, double r)"
         },
-        "example": "geometricProgressiona(5, 5, 5)",
+        "example": "GeometricProgression.solve(5, 5, 5)",
         "py": {
-            "file": "geometricProgressiona.py",
-            "signature": "geometric_progression_a(an: float, n: float, r: float)"
+            "file": "geometric_progression.py",
+            "signature": "solve(an: float, n: float, r: float)"
         },
-        "name": "geometricProgressiona",
+        "name": "GeometricProgression.solve",
         "js": {
-            "file": "geometricProgressiona.ts",
+            "file": "GeometricProgression.ts",
             "signature": "an: number, n: number, r: number"
-        }
+        },
+        "description": "GP First Term"
     },
     {
         "cs": {
@@ -1522,14 +1472,15 @@
     {
         "example": "Calculus.diff(5, null)",
         "py": {
-            "file": "_calculus.py",
+            "file": "calculus.py",
             "signature": "diff(f, density=5)"
         },
         "name": "Calculus.diff",
         "js": {
             "file": "Calculus.ts",
             "signature": "f: (x: number) => number, density = 5"
-        }
+        },
+        "description": "Numerical Differentiation"
     },
     {
         "example": "Solid3D.cylinderArea(5, 5)",
@@ -1537,7 +1488,8 @@
         "js": {
             "file": "Solid3D.ts",
             "signature": "r: number, h: number"
-        }
+        },
+        "description": "Surface area of a cylinder"
     },
     {
         "cs": {
@@ -1546,26 +1498,28 @@
         },
         "example": "Solid3D.sphereVolume(5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "sphere_volume(r: float)"
         },
         "name": "Solid3D.sphereVolume",
         "js": {
             "file": "Solid3D.ts",
             "signature": "r: number"
-        }
+        },
+        "description": "Volume of a sphere"
     },
     {
         "example": "Solid3D.triangularPyramidVolume(5, 5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "triangular_pyramid_volume(a: float, h: float)"
         },
         "name": "Solid3D.triangularPyramidVolume",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number, h: number"
-        }
+        },
+        "description": "Volume of a triangular pyramid"
     },
     {
         "cs": {
@@ -1574,14 +1528,15 @@
         },
         "example": "Quadrilateral.parallelogramArea(5, 5)",
         "py": {
-            "file": "_quadrilateral.py",
+            "file": "quadrilateral.py",
             "signature": "parallelogram_area(a: float, h: float)"
         },
         "name": "Quadrilateral.parallelogramArea",
         "js": {
             "file": "Quadrilateral.ts",
             "signature": "a: number, h: number"
-        }
+        },
+        "description": "Area of a parallelogram"
     },
     {
         "cs": {
@@ -1602,34 +1557,19 @@
     {
         "cs": {
             "file": "Equation.cs",
-            "signature": "CubicEquationFirst(double a, double b, double c, double d)"
+            "signature": "CubicRoots(double a, double b, double c, double d)"
         },
-        "example": "Equation.cubicEquationFirst(5, 5, 5, 5)",
+        "example": "Equation.cubicRoots(5, 5, 5, 5)",
         "py": {
-            "file": "_equation.py",
-            "signature": "cubic_equation_first(a: float, b: float, c: float, d: float)"
+            "file": "equation.py",
+            "signature": "cubic_roots(a: float, b: float, c: float, d: float)"
         },
-        "name": "Equation.cubicEquationFirst",
+        "name": "Equation.cubicRoots",
         "js": {
             "file": "Equation.ts",
             "signature": "a: number, b: number, c: number, d: number"
-        }
-    },
-    {
-        "cs": {
-            "file": "Calculus.cs",
-            "signature": "InfiniteSeries3(double x)"
         },
-        "example": "Calculus.infiniteSeries3(5)",
-        "py": {
-            "file": "_calculus.py",
-            "signature": "infinite_series3(x: float)"
-        },
-        "name": "Calculus.infiniteSeries3",
-        "js": {
-            "file": "Calculus.ts",
-            "signature": "x: number"
-        }
+        "description": "Roots of a cubic equation"
     },
     {
         "cs": {
@@ -1638,14 +1578,15 @@
         },
         "example": "BasicMath.sqrt(5)",
         "py": {
-            "file": "_basic_math.py",
+            "file": "basic_math.py",
             "signature": "sqrt(a: float)"
         },
         "name": "BasicMath.sqrt",
         "js": {
             "file": "BasicMath.ts",
             "signature": "a: number"
-        }
+        },
+        "description": "Square root"
     },
     {
         "cs": {
@@ -1654,14 +1595,15 @@
         },
         "example": "Trigonometry.radToDegree(5)",
         "py": {
-            "file": "_trigonometry.py",
+            "file": "trigonometry.py",
             "signature": "rad_to_degree(rad: float)"
         },
         "name": "Trigonometry.radToDegree",
         "js": {
             "file": "Trigonometry.ts",
             "signature": "rad: number"
-        }
+        },
+        "description": "Radians to Degrees conversion"
     },
     {
         "example": "ArithmeticProgression.solve(5, 5, 5)",
@@ -1694,14 +1636,15 @@
         },
         "example": "Calculus.sigma(5, 5)",
         "py": {
-            "file": "_calculus.py",
+            "file": "calculus.py",
             "signature": "sigma(n: float, k: float)"
         },
         "name": "Calculus.sigma",
         "js": {
             "file": "Calculus.ts",
             "signature": "n: number, k: number"
-        }
+        },
+        "description": "Summation (Sigma)"
     },
     {
         "cs": {
@@ -1710,13 +1653,14 @@
         },
         "example": "Solid3D.tetrahedronArea(5)",
         "py": {
-            "file": "_solid3_d.py",
+            "file": "solid3_d.py",
             "signature": "tetrahedron_area(a: float)"
         },
         "name": "Solid3D.tetrahedronArea",
         "js": {
             "file": "Solid3D.ts",
             "signature": "a: number"
-        }
+        },
+        "description": "Surface area of a regular tetrahedron"
     }
 ]
