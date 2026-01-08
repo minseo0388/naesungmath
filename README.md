@@ -1,6 +1,8 @@
 # Naesungmath
 
 [![npm version](https://img.shields.io/npm/v/naesungmath.svg)](https://www.npmjs.com/package/naesungmath)
+[![PyPI version](https://badge.fury.io/py/naesungmath.svg)](https://badge.fury.io/py/naesungmath)
+[![NuGet](https://img.shields.io/nuget/v/NaesungMath.svg)](https://www.nuget.org/packages/NaesungMath/)
 [![install size](https://packagephobia.com/badge?p=naesungmath)](https://packagephobia.com/result?p=naesungmath)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
